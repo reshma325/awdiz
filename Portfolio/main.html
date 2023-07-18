@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/ed509e22a0.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshma Sawant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #Screen {
+            width: 100%;
+            height: 5000px;
+            background-image: url(/Portfolio/images/pxfuel.jpg);
+            background-repeat: no-repeat;
+            background-size: 1600px 900px;
+            background-color: antiquewhite;
+        }
+
+        #NavigationBar {
+            width: 70%;
+            height: 70px;
+            margin: auto;
+            display: flex;
+            color: white;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .padding-10 {
+            padding: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        #RightNavigation {
+            padding: 20px;
+        }
+
+        #RightNavigation div {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        #Home {
+            width: 70%;
+            margin: auto;
+            height: 600px;
+            text-align: center;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #Home div {
+            margin-top: 150px;
+        }
+
+        #Home div h1 {
+            font-size: 75px;
+        }
+
+        #Home div h3 {
+            font-size: 44px;
+        }
+
+        #About {
+            width: 70%;
+            margin: auto;
+            height: 450px;
+            margin-top: 250px;
+            display: flex;
+            justify-content: space-evenly;
+            /* background-image: url(/Portfolio/pxfuel.jpg); */
+            background-size: auto;
+            background-color: rgb(255, 255, 255);
+            color: rgb(27, 27, 27);
+            box-shadow: 0px 0px 4px rgb(27, 27, 27);
+        }
+
+        #About-Left {
+            width: 42%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            height: 60%;
+            margin-top: 80px;
+        }
+
+        #About-Right {
+            width: 42%;
+            margin-top: 80px;
+        }
+
+        #About-Right button:hover {
+            transform: scale(1.08);
+        }
+
+        .w-42 {
+            width: 45%;
+            /* border: 1px solid; */
+        }
+
+        .fs-16 {
+            font-size: 16px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .ff {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 13px;
+            width: 48%;
+            height: 40px;
+        }
+
+        #icons div {
+            border: 4px solid rgb(27, 27, 27);
+            width: 28px;
+            height: 20px;
+            border-radius: 50%;
+            padding: 15px;
+            padding-top: 25px;
+        }
+
+        #icons div:hover {
+            background-color: antiquewhite;
+            color: rgb(27, 27, 27);
+            border: 4px solid;
+            border-color: rgb(27, 27, 27);
+            transform: scale(1.08);
+        }
+
+        #Skills {
+            width: 70%;
+            margin: auto;
+            /* border: 1px solid black; */
+            /* background-color: antiquewhite; */
+            margin-top: 170px;
+            /* height: 600px; */
+            text-align: center;
+            color: rgb(27, 27, 27);
+        }
+
+        #Skills h1 {
+            border-bottom: 5px solid rgb(27, 27, 27);
+            margin: auto;
+            width: 13%;
+        }
+
+        #box {
+            display: flex;
+            /* border: 1px solid black; */
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #box>div {
+            width: 30%;
+            height: 300px;
+            /* border: 1px solid black; */
+            border-radius: 20px;
+            margin-bottom: 25px;
+            background-color: white;
+        }
+
+        #box>div:hover {
+            /* background-color: antiquewhite; */
+            box-shadow: 0px 0px 4px rgb(27, 27, 27);
+            transform: scale(1.08);
+            border: 1px;
+            /* border-color:rgb(27, 27, 27); */
+        }
+
+        .shadow {
+            box-shadow: 0px 0px 5px rgb(206, 201, 201);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Screen">
+        <div id="NavigationBar">
+            <div class="padding-10">
+                <h1>Reshma Sawant</h1>
+            </div>
+            <div id="RightNavigation" class="flex">
+                <div>HOME</div>
+                <div>ABOUT</div>
+                <div>SKILLS</div>
+                <div>PROJECTS</div>
+                <div>BLOG</div>
+                <div>CONTACT ME</div>
+            </div>
+        </div>
+        <div id="Home">
+            <div>
+                <h1>Hi</h1>
+                <h1>I'm Reshma Sawant</h1>
+                <h3>Full stack devloper</h3>
+            </div>
+        </div>
+        <div id="About">
+            <div id="About-Left">
+                <div class="w-42">
+                    <img style="height: 80%; width: 100%; border-radius: 25px;"
+                        src="https://wallpapers.com/images/high/messy-hair-shadow-pfp-wup30zw5ftcqg169.webp"
+                        alt="Profile_Picture">
+                </div>
+                <div class="w-42">
+                    <p class="mb-20 ff fs-16"><b>Name:</b> Reshma</p>
+                    <p class="mb-20 ff "> <b>Profile:</b> Full Stack Developer</p>
+                    <p class="mb-20 ff fs-16"><b>Email:</b> Reshma@gmail.com</p>
+                    <p class="mb-20 ff fs-16"><b>Phone:</b> 987654321</p>
+                </div>
+            </div>
+            <div id="About-Right">
+                <h1 class="ff">About me</h1>
+                <div style="border:2px solid; border-color: rgb(27, 27, 27); width: 34%;">
+                </div>
+                <p style="color:rgb(27, 27, 27) ;font-size: 18px; margin-top: 15px;" class="ff">
+                    Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Phasellus maximus id dui id sollicitudin.
+                    Ut sit amet elit mi.id dictum ante orci id mi.
+                </p>
+                <button type="button" onclick="alert('Loading.......')"
+                    style="color: antiquewhite; width: 150px;height:35px;margin-top: 13px; font-size: 20px; border: none; background-color:rgb(27, 27, 27);"
+                    class="ff bb1">
+                    Resume
+                </button>
+                <div id="icons">
+                    <div>
+                        <i class="fa-brands fa-twitter fa-2xl"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-linkedin fa-2xl "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Skills">
+            <h1 class="ff" style="font-size: 50px; margin-bottom: 45px;">Skills</h1>
+            <div id="box">
+                <div class="shadow">
+                    <img style="height:180px; margin-top: 60px;" src="/Portfolio/images/html5-logo-svgrepo-com.svg"
+                        alt="HTML">
+                    <!-- <h2 style="color: antiquewhite;">HTML</h2> -->
+                </div>
+                <div class="shadow">
+                    <img style="height:180px; margin-top: 60PX; color: rgb(27, 27, 27);"
+                        src="/Portfolio/images/css3-02-svgrepo-com.svg" alt="CSS">
+                </div>
+                <div class="shadow"> <img style="height:190px; width: 240PX; margin-top: 55px; "
+                        src="/Portfolio/images/js.png" alt="JavaScript">
+                </div>
+                <div class="shadow"> <img style="height:180px; margin-top: 60px;"
+                        src="/Portfolio/images/pngwing.com (2).png" alt="React Native">
+                </div>
+                <div> <img style="height:180px; margin-top: 60px;" src="/Portfolio/images/pngwing.com (3).png"
+                        alt="NodeJs">
+                </div>
+                <div class="shadow"> <img style="height:180px; margin-top: 60px;"
+                        src="/Portfolio/images/mongodb-svgrepo-com.svg" alt="mongoDB">
+                </div>
+            </div>
+        </div>
+
+        <div id="Project"></div>
+        <div id="Blog"></div>
+        <div id="Contact"></div>
+    </div>
+</body>
+
+</html>
