@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa Joe's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/673/673887.svg">
+</head>
+    <body>
+<h1>Welcome to Papa Joe's Pizza Place!<br></h1>
+    <form method="POST" action="mailto:example@gmail.com" enctype="text/plain">
+<h2>Size selector</h2>
+        <fieldset>
+            <legend>How hungry are you?</legend>
+                <input type="radio" name="size">
+                     <label for="size">small</label>
+                <input type="radio" name="size">
+                     <label for="size">Medium</label>
+                <input type="radio" name="size">
+                     <label for="size">Large</label>
+        </fieldset>
+<h2>Toppings</h2>
+        <fieldset>
+            <legend>Whats on it?</legend>
+                <input type="checkbox" name="pepperoni">
+                    <label for="Pepperoni">Pepperoni</label>
+                <input type="checkbox" name="Bacon">
+                    <label for="Bacon">Bacon</label>
+                <input type="checkbox" name="Xtra Cheese">
+                    <label for="Xtra Cheese">Xtra Cheese</label><br>
+                <input type="checkbox" name="Carrot">
+                    <label for="Carrot">Carrot</label>
+                <input type="checkbox" name="Brocoli">
+                    <label for="Brocoli">Brocoli</label>
+                <input type="checkbox" name="Cornflakes">
+                    <label for="Cornflakes">Cornflakes</label>
+        </fieldset>
+    
+<h2>How do you want it?</h2>
+        <fieldset>
+            <legend>method</legend>
+        <select name="options">
+            <option value="" selected="selected" disabled>Please choose one</option>
+                <option value="Sit in">Sit in</option>
+                <option value="Collect">Collect</option>
+                <option value="Delivery">Delivery</option>
+        </select>
+        </fieldset>
+<h2>When do you want it?</h2>
+        <fieldset>
+            <legend>Please select a time & date</legend>
+        <label for="date"></label>
+            <input type="datetime-local" name="date" id="date">
+        </fieldset><br><br>
+<h2>Delivery Information</h2>
+        <fieldset>
+            <legend>Where can we find you?</legend>
+                <label for="name">Name</label>
+            <input type="name" name="name" placeholder="Name"><br><br>
+                <label for="email">Email</label>
+            <input type="email" name="email"  placeholder="email@example.com"><br><br>
+                <label for="phone">Phone</label>
+            <input type="tel" name="phone" placeholder="Tel."><br><br>
+                <label for="address">Address</label><br>
+            <textarea name="address" cols="20" rows="10" placeholder="Enter your address here:"></textarea>
+        </fieldset>
+<h2>Payment</h2>
+        <fieldset>
+            <legend>Pay the man</legend>
+                <label for="currency">Select currency</label>
+            <select name="currency" id="currency">
+                <option value="USD">GBP</option>
+                <option value="GBP">USD</option>
+                <option value="EUR">EUR</option>
+            </select><br>
+                <label for="card number">Card number:</label>
+            <input type="card number" name="card number" placeholder="16 digit no."><br><br>
+                <label for="expiry" >Expiry date:</label>
+            <input type="expiry" name="expiry" placeholder="--/--"><br><br>
+                <label for="cvv">CVV no.</label>
+            <input type="cvv" name="cvv" placeholder="your 3 digits">
+        </fieldset>
+<h2>Additional information<br>/delivery requests</h2>
+        <fieldset>
+            <legend>Anything at all!</legend>
+                <label for="textarea"></label>
+            <textarea name="" id="textarea" cols="20" rows="10" placeholder="Any additional information here"></textarea><br><br>
+        </fieldset><br><br>
+         <button type="submit">Place your order now!</button>
+        
+</form>
+</body>
+</html>

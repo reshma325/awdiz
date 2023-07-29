@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            justify-content: space-between;
+            width: 100%;
+            background-color: black;
+            
+        }
+
+        #parent>div {
+            width: 30%;
+            height: 300px;
+            border: 5px solid rgb(0, 217, 255);
+            color: rgb(0, 217, 255);
+            font-size: 30px;
+        }
+
+        /* mobile design */
+        @media screen and (max-width : 450px) {
+
+            /* It'll apply css upto 450px */
+            /* max-width - upto  */
+            /* min-width - start from  */
+            #parent {
+                background-color: rgb(138, 255, 5);
+                flex-direction: column;
+                /* flex-direction: column-reverse; */
+                font-size: 60px;
+              
+                text-align: center;
+            }
+
+            #parent div {
+                width: 100%;
+                height: 180px;
+                border: 5px solid black;
+                font-size: 42px;
+                color: rgb(0, 0, 0);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        }
+
+        /* tablet view */
+        @media screen and (min-width : 451px) and (max-width : 850px) {
+            #parent {
+                background-color: rgb(35, 114, 167);
+                flex-direction: column-reverse;
+                font-size:  60px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #parent div {
+                width: 80%;
+                height: 200px;
+                border: 5px solid rgb(255, 145, 0);
+                color: rgb(255, 145, 0);
+                font-size: 38px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="parent">
+        <div>This</div>
+        <div>Is a </div>
+        <div>Responsive</div>
+        <div>Page</div>
+    </div>
+
+</body>
+
+</html>
