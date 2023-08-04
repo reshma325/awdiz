@@ -1,0 +1,1468 @@
+* {
+    padding: 0px;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+#screen {
+    border: 5px solid red;
+    width: 100%;
+    height: 10000px;
+
+}
+
+#nav {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 65px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    /* border: 1px solid greenyellow; */
+    width: 75.813px;
+    height: 30px;
+    padding-top: 30px;
+
+    margin-left: 30px;
+
+}
+
+#logo>p {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    /* height 16px */
+    line-height: 16px;
+    flex-wrap: nowrap;
+}
+
+#logo>p:nth-child(2) {
+    display: none;
+}
+
+#menu {
+    /* border: 1px soid white; */
+    width: 480.281px;
+    height: 29.328px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu>p {
+    /* border: 1px solid blueviolet; */
+    flex-wrap: wrap;
+    font-family: "Space Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 31.3281px;
+    line-height: 21px;
+    padding-top: 25px;
+}
+
+#social {
+    /* border: 1px solid goldenrod; */
+    width: 95px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+#social>i {
+
+    line-height: 17px;
+    padding-top: 25px;
+}
+
+#lines {
+    display: none;
+}
+
+
+
+
+#body {
+    /* border: 2px dotted blue; */
+    width: 100%;
+    height: 1000px;
+    /* margin-top: 100px; */
+}
+
+#homepage {
+    /* border: 1px solid rgb(3, 252, 23); */
+    width: 100%;
+    height: 687px;
+    margin: auto;
+    text-align: center;
+    padding: 48px 0px;
+    align-items: center;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    margin-bottom: 100px;
+}
+
+#home {
+    /* border: 1px solid rosybrown; */
+    width: 90%;
+    height: 407px;
+    margin: auto;
+    padding: 0px 60px;
+    margin-top: 110px;
+
+}
+
+#imgdiv {
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 108px;
+    margin: auto;
+}
+
+#imgdiv>img {
+    width: 108px;
+    height: 108px;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+#home_text {
+    /* border: 1px solid yellow; */
+    width: 90%;
+    margin: auto;
+    height: 79.439px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#home_text>h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 70.4px;
+    font-style: normal;
+    font-weight: 400;
+    height: 79.4375px;
+    letter-spacing: 1.408px;
+    line-height: 79.4464px;
+    margin-bottom: 20px;
+}
+
+#home_text>p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    height: 50.375px;
+    line-height: 25.2px;
+    color: rgb(182, 182, 182);
+}
+
+#home_text>button {
+    /* border: 2px solid red; */
+    width: 160px;
+    height: 44px;
+    background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+    /* background-color: rgb(164, 162, 162); */
+    color: black;
+    border-radius: 50px;
+    margin-top: 60px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    /* margin-left: 0%; */
+
+}
+
+#home_2>button i {
+    margin-left: 10px;
+}
+
+#text-bt {
+
+    background-color: rgb(171, 168, 168);
+    /* height: 40%;
+    width: 80%; */
+    border-radius: 30px;
+    border: none;
+    color: black;
+    padding: 0px;
+
+    /* border: 1px solid greenyellow; */
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    color: black;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#img-bt {
+    margin-left: 120px;
+    background-color: rgb(164, 162, 162);
+    width: 0;
+    height: 0;
+    border-style: ridge;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent rgb(0, 0, 0);
+    outline: solid black;
+
+}
+
+#homepage_2 {
+    /* border: 2px solid rgb(255, 251, 0); */
+    margin-top: 100px;
+    width: 100%;
+    height: 525.516px;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#home_2 {
+    /* border: 1px solid aqua; */
+    width: 25%;
+    height: 525.516px;
+    padding: 0px 35px;
+
+
+
+}
+
+
+
+#home_2>p:nth-child(1) {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(182, 182, 182);
+    text-align: left;
+}
+
+
+#home_2>h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 41.6px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.832px;
+    line-height: 48.5306px;
+    text-align: left;
+
+
+}
+
+#home_2>p:nth-last-child(2) {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(182, 182, 182);
+    text-align: left;
+    margin-top: 150px;
+}
+
+#home_2>button {
+    /* border: 2px solid red; */
+    width: 160px;
+    height: 44px;
+    background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+    /* background-color: rgb(164, 162, 162); */
+    color: black;
+    border-radius: 50px;
+    margin-top: 60px;
+    margin-right: 90%;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+#home_2>button i {
+    margin-left: 10px;
+}
+
+
+#images {
+    /* border: 1px solid aqua; */
+    width: 70%;
+    height: 525.516px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 25px;
+    margin-right: 50px;
+}
+
+#left {
+    border: 1px dotted yellow;
+    width: 45%;
+    height: 100%;
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+    /* object-fit: fill; */
+    /* overflow: hidden; */
+
+}
+
+#img1 {
+    border: 1px solid red;
+    width: 70%;
+    height: 356.516px;
+    padding: 64px 28px 24px 28px;
+    margin: 10%;
+    background-image :linear-gradient(99deg, rgba(255, 255, 255, 0) 5%, #ffffff 100%), radial-gradient(circle at 0% 20%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+    /* display: none ; */
+}
+
+/*  #rightA>div:nth-child(1)  */
+#first {
+    border: 2px solid blue;
+    /* background-color: #adadad; */
+    width: 85%;
+    height: 60%;
+    margin: 0% 15.5% 0% 7.5%;
+    padding-top: 15%;
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg);
+    object-fit: fill;
+
+}
+
+#first1 {
+    border: 1px solid aqua;
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg);
+    object-fit: cover;
+
+
+    overflow-wrap: break-word;
+   
+}
+
+#first>button {
+  border: 2px solid red;
+  width: 160px;
+  height: 44px;
+  background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+  background-color: rgb(164, 162, 162);
+  color: black;
+  border-radius: 50px;
+  margin-top: 60px;
+  /* margin-right: 50%; */
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+#first>button i{
+    margin-left: 10px;
+}
+#second{
+    border: 1px solid aquamarine;
+    /* background-color: #adadad; */
+    /* background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%); */
+
+}
+
+
+#second >p:nth-child(1){
+    /* border: 1px solid green; */
+    background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 20px;
+
+}
+#second >p:nth-child(2){
+    /* border: 1px solid green; */
+    background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+    color: black;
+    font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+
+
+#right {
+    /* border: 1px dotted yellow; */
+    width: 45%;
+    height: 100%;
+    background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+    /* object-fit:cover;
+    overflow: hidden; */
+}
+#homepage_3{
+    border: 2px solid green;
+    width: 100%;
+    height: 160.750px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+    /* margin: auto; */
+  
+  
+}
+#container_3{
+    /* border: 1px solid rgb(255, 0, 255) ; */
+    width:70%;
+    height:170.750px;  
+    margin-left: 131.5px;
+    margin-right: 131.5px;
+/*  
+    margin: auto; */
+   
+
+}
+#row_3{
+    /* border: 1px dotted pink; */
+    width: 120%;
+    height:170.750px; 
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+
+
+}
+
+#row_left{
+    /* border: 1px solid royalblue; */
+    width: 55%;
+    height: 168.750px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
+#row_left>h2{
+    /* border: 1px dashed goldenrod; */
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: left;
+    letter-spacing: 0.832px;
+    line-height: 48px;
+    overflow-wrap: break-word;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    margin-right: 0px;
+
+}
+
+#row_right{
+    /* border: 1px solid royalblue; */
+    width: 35%;
+    height: 168.750px;
+    padding-left: 16px;
+    padding-right: 16px;
+ 
+
+}
+#row_right>p{
+    border-left: 1px solid rgb(40,40,40);
+    /* border: 1px dashed goldenrod; */
+    height: auto;
+    font-family: "DM Sans", sans-serif;
+    color: rgb(182, 182, 182);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    overflow-wrap: break-word;
+    text-size-adjust: 100%;
+    text-align: left;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 74px;
+    vertical-align: middle;
+
+ 
+
+
+}
+
+
+
+@media screen and (min-width : 990px) and (max-width : 1299px) {
+    * {
+        padding: 0px;
+        margin: 0;
+        background-color: black;
+        color: white;
+    }
+
+    #screen {
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 1000px;
+
+    }
+
+    #nav {
+        /* border: 1px solid yellow; */
+        width: 100%;
+        height: 65px;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo {
+        /* border: 1px solid greenyellow; */
+        width: 75.813px;
+        height: 30px;
+        padding-top: 30px;
+
+        margin-left: 30px;
+
+    }
+
+    #logo>p {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        /* height 16px */
+        line-height: 16px;
+        flex-wrap: nowrap;
+    }
+
+    #logo>p:nth-child(2) {
+        display: none;
+    }
+
+    #menu {
+        /* border: 1px soid white; */
+        width: 480.281px;
+        height: 29.328px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menu>p {
+        /* border: 1px solid blueviolet; */
+        flex-wrap: wrap;
+        font-family: "Space Grotesk";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        height: 31.3281px;
+        line-height: 21px;
+        padding-top: 25px;
+    }
+
+    #social {
+        /* border: 1px solid goldenrod; */
+        width: 95px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 30px;
+    }
+
+    #social>i {
+
+        line-height: 17px;
+        padding-top: 25px;
+    }
+
+    #lines {
+        display: none;
+    }
+
+
+
+
+    #body {
+        /* border: 2px dotted blue; */
+        width: 100%;
+        height: 1000px;
+        /* margin-top: 100px; */
+    }
+
+    #homepage {
+        /* border: 1px solid rgb(3, 252, 23); */
+        width: 100%;
+        height: 687px;
+        margin: auto;
+        text-align: center;
+        padding: 48px 0px;
+        align-items: center;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        margin-bottom: 100px;
+    }
+
+    #home {
+        /* border: 1px solid rosybrown; */
+        width: 90%;
+        height: 407px;
+        margin: auto;
+        padding: 0px 60px;
+        margin-top: 110px;
+
+    }
+
+    #imgdiv {
+        /* border: 1px solid red; */
+        width: 80%;
+        height: 108px;
+        margin: auto;
+    }
+
+    #imgdiv>img {
+        width: 108px;
+        height: 108px;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    #home_text {
+        /* border: 1px solid yellow; */
+        width: 90%;
+        margin: auto;
+        height: 79.439px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #home_text>h1 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 70.4px;
+        font-style: normal;
+        font-weight: 400;
+        height: 79.4375px;
+        letter-spacing: 1.408px;
+        line-height: 79.4464px;
+        margin-bottom: 20px;
+    }
+
+    #home_text>p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        height: 50.375px;
+        line-height: 25.2px;
+        color: rgb(182, 182, 182);
+    }
+
+    #home_text>button {
+        /* border: 2px solid red; */
+        width: 160px;
+        height: 44px;
+        background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+        /* background-color: rgb(164, 162, 162); */
+        color: black;
+        border-radius: 50px;
+        margin-top: 50px;
+        /* margin-left: 44%; */
+
+    }
+
+    #text-bt {
+
+        background-color: rgb(171, 168, 168);
+        /* height: 40%;
+        width: 80%; */
+        border-radius: 30px;
+        border: none;
+        color: black;
+        padding: 0px;
+
+        /* border: 1px solid greenyellow; */
+        padding-top: 20px;
+        /* padding-bottom: 20px; */
+        color: black;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #img-bt {
+        margin-left: 120px;
+        background-color: rgb(164, 162, 162);
+        width: 0;
+        height: 0;
+        border-style: ridge;
+        border-width: 10px 0 10px 20px;
+        border-color: transparent transparent transparent rgb(0, 0, 0);
+        outline: solid black;
+
+    }
+
+    #homepage_2 {
+        /* border: 2px solid rgb(255, 251, 0); */
+        margin-top: 100px;
+        width: 100%;
+        height: 525.516px;
+        padding: 80px 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #home_2 {
+        /* border: 1px solid aqua; */
+        width: 28%;
+        height: 525.516px;
+        padding: 0px 35px;
+
+
+
+    }
+
+
+
+    #home_2>p:nth-child(1) {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(182, 182, 182);
+        text-align: left;
+    }
+
+
+    #home_2>h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 41.6px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.832px;
+        line-height: 48.5306px;
+        text-align: left;
+
+
+    }
+
+    #home_2>p:nth-last-child(2) {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(182, 182, 182);
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    #home_2>button {
+        /* border: 2px solid red; */
+        width: 160px;
+        height: 44px;
+        /* background-color: rgb(164, 162, 162); */
+        background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+        color: black;
+        border-radius: 50px;
+        margin-top: 50px;
+        margin-right: 90%;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+    #images {
+        border: 1px solid aqua;
+        width: 80%;
+        height: 525.516px;
+        display: flex;
+        justify-content: space-between;
+        /* padding: 0px 25px; */
+        margin-right: 50px;
+    }
+
+    #left {
+        /* border: 1px dotted yellow; */
+        width: 48%;
+        height: 100%;
+        background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+        /* object-fit: fill; */
+        /* overflow: hidden; */
+
+    }
+
+    #right {
+        /* border: 1px dotted yellow; */
+        width: 48%;
+        height: 100%;
+        background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+        /* object-fit:cover;
+    overflow: hidden; */
+    }
+
+
+
+
+}
+
+@media screen and (min-width : 750px) and (max-width : 990px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #screen {
+        border: 2px solid red;
+        width: 100%;
+        height: 3300px;
+
+    }
+
+
+    #logo>p:nth-child(1),
+    #menu,
+    #social {
+        display: none;
+    }
+
+    #logo>p:nth-child(2) {
+        display: block;
+    }
+
+
+    #lines {
+
+        margin-right: 30px;
+        /* border: 1px solid white; */
+        padding-top: 30px;
+        display: block;
+
+    }
+
+    #imgdiv>img {
+        width: 98px;
+        height: 98px;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #homepage {
+        /* border: 1px solid rgb(3, 252, 23); */
+        width: 98%;
+        height: 687px;
+        margin: auto;
+        text-align: center;
+        padding: 48px 0px;
+        align-items: center;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        margin-bottom: 100px;
+    }
+
+    #home {
+        /* border: 1px solid rosybrown; */
+        width: 85%;
+        height: 407px;
+        margin: auto;
+        padding: 0px 60px;
+        margin-top: 110px;
+
+    }
+
+    #home_text {
+        /* border: 1px solid yellow; */
+        width: 85%;
+        margin: auto;
+        height: 79.439px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+
+    #home_text>h1 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 60.4px;
+        font-style: normal;
+        font-weight: 400;
+        height: 60.4375px;
+        letter-spacing: 1.408px;
+        line-height: 60.4464px;
+        margin-bottom: 15px;
+    }
+
+    #home_text>p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        height: 45.375px;
+        line-height: 20.2px;
+        color: rgb(182, 182, 182);
+    }
+
+    #home_text>button {
+        /* border: 2px solid red; */
+        width: 160px;
+        height: 44px;
+        /* background-color: rgb(164, 162, 162); */
+        background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+        color: black;
+        border-radius: 50px;
+        margin-top: 50px;
+        /* margin-left: 44%; */
+
+    }
+
+    #homepage_2 {
+        /* border: 2px solid rgb(255, 251, 0); */
+        margin-top: 170px;
+        width: 98%;
+        height: 525.516px;
+        padding: 80px 0px;
+        flex-direction: column;
+    }
+
+    #home_2 {
+        /* border: 1px dashed aqua; */
+        width: 95%;
+        height: auto;
+        padding: 0px 12px;
+        /* padding: 0px 51px; */
+        /* display: flex;
+        justify-content: space-around;
+        flex-direction: column; */
+
+    }
+
+    #home_2>p:nth-child(1) {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(182, 182, 182);
+        text-align: left;
+        margin-top: 80PX;
+        margin-bottom: 5PX;
+    }
+
+    #home_2>h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 41.6px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.832px;
+        line-height: 48.5306px;
+        text-align: left;
+
+
+    }
+
+    #home_2>p:nth-last-child(2) {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(182, 182, 182);
+        text-align: left;
+        margin-top: 0px;
+        flex-wrap: wrap;
+    }
+
+    #home_2>button {
+        /* border: 2px solid red; */
+        width: 160px;
+        height: 44px;
+        /* background-color: rgb(164, 162, 162); */
+        background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+        color: black;
+        border-radius: 50px;
+        margin-top: 50px;
+        margin-right: 90%;
+        margin-bottom: 70PX;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+
+
+    }
+
+    #images {
+        /* border: 2px solid aqua; */
+        width: 97%;
+        height: 515.516px;
+        /* flex-direction: column; */
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 25px;
+        margin-right: 50px;
+    }
+
+    #left {
+        /* border: 1px dotted rgb(255, 0, 0); */
+        width: 48%;
+        height: 500px;
+        background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+        /* object-fit: fill; */
+        /* margin-bottom: 100px;
+    background-repeat: no-repeat; */
+        /* overflow: hidden; */
+
+    }
+
+    #right {
+        /* border: 1px dotted blue; */
+        width: 48%;
+        height: 500px;
+        background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+        /* object-fit:cover;
+    overflow: hidden; */
+    }
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 451px) and (max-width: 750px) {
+
+    #screen {
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 15000px;
+
+    }
+
+    #logo>p:nth-child(1),
+    #menu,
+    #social {
+        display: none;
+    }
+
+    #logo>p:nth-child(2) {
+        display: block;
+    }
+
+
+    #lines {
+
+        margin-right: 30px;
+        /* border: 1px solid white; */
+        padding-top: 30px;
+        display: block;
+
+    }
+
+    #imgdiv>img {
+        width: 98px;
+        height: 98px;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #homepage {
+        /* border: 1px solid rgb(3, 252, 23); */
+        width: 98%;
+        height: 687px;
+        margin: auto;
+        text-align: center;
+        padding: 48px 0px;
+        align-items: center;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        margin-bottom: 100px;
+    }
+
+    #home {
+        /* border: 1px solid rosybrown; */
+        width: 75%;
+        height: 407px;
+        margin: auto;
+        padding: 0px 60px;
+        margin-top: 110px;
+
+    }
+
+    #home_text {
+        /* border: 1px solid yellow; */
+        width: 85%;
+        margin: auto;
+        height: 79.439px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+
+
+    #home_text>h1 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 52.4px;
+        font-style: normal;
+        font-weight: 400;
+        height: 60.4375px;
+        letter-spacing: 1.408px;
+        line-height: 60.4464px;
+        margin-bottom: 15px;
+        flex-wrap: nowrap;
+    }
+
+    #home_text>p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        height: 45.375px;
+        line-height: 20.2px;
+        color: rgb(182, 182, 182);
+    }
+
+    #home_text>button {
+        /* border: 2px solid red; */
+        width: 160px;
+        height: 44px;
+        /* background-color: rgb(164, 162, 162); */
+        background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+        color: black;
+        border-radius: 50px;
+        margin-top: 50px;
+        /* margin-left: 44%; */
+
+    }
+
+    #homepage_2 {
+        /* border: 2px solid rgb(255, 251, 0); */
+        /* margin-top: 350px; */
+        width: 98%;
+        height: 1500px;
+        /* padding: 80px 0px; */
+        flex-direction: column;
+    }
+
+    #home_2 {
+        /* border: 1px solid aqua; */
+        width: 95%;
+        height: auto;
+        padding: 0px 12px;
+        /* padding: 0px 51px; */
+        /* display: flex;
+        justify-content: space-around;
+        flex-direction: column; */
+
+    }
+
+    #home_2>p:nth-child(1) {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(182, 182, 182);
+        text-align: left;
+        margin-top: 80PX;
+        margin-bottom: 5PX;
+    }
+
+    #home_2>h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 41.6px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.832px;
+        line-height: 48.5306px;
+        text-align: left;
+
+
+    }
+
+    #home_2>p:nth-last-child(2) {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(182, 182, 182);
+        text-align: left;
+        margin-top: 0px;
+        flex-wrap: wrap;
+    }
+
+    #home_2>button {
+        /* border: 2px solid red; */
+        width: 160px;
+        height: 44px;
+        /* background-color: rgb(164, 162, 162); */
+        background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+        color: black;
+        border-radius: 50px;
+        margin-top: 50px;
+        margin-right: 90%;
+        margin-bottom: 100PX;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+
+
+    }
+
+    #images {
+        /* border: 1px solid aqua; */
+        width: 91%;
+        height: 1000.516px;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 25px;
+        margin-right: 50px;
+        /* flex-direction: column; */
+    }
+
+    #left {
+        /* border: 1px dotted rgb(255, 17, 0); */
+        width: 100%;
+        height: 100%;
+        background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+        /* object-fit: fill; */
+        /* overflow: hidden; */
+        margin-bottom: 30px;
+
+    }
+
+    #right {
+        /* border: 1px dotted rgb(55, 0, 255); */
+        width: 100%;
+        height: 100%;
+        background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+        /* object-fit:cover;
+    overflow: hidden; */
+
+    }
+
+
+}
+
+@media screen and (max-width : 450px) {
+
+    /* *{
+        margin: 0;
+        padding: 0;
+    } */
+    /* #screen {
+        border: 2px solid red;
+        width: 100%;
+        height: 15000px;
+    
+    } */
+    #nav {
+        /* border: 1px solid yellow; */
+        width: 97%;
+        height: 65px;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo>p:nth-child(1),
+    #menu,
+    #social {
+        display: none;
+    }
+
+    #logo>p:nth-child(2) {
+        display: block;
+    }
+
+
+    #lines {
+
+        margin-right: 30px;
+        /* border: 1px solid white; */
+        padding-top: 30px;
+        display: block;
+
+    }
+
+    #imgdiv>img {
+        width: 85px;
+        height: 85px;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    #home {
+        /* border: 1px solid rosybrown; */
+        width: 80%;
+        height: 407px;
+        margin: auto;
+        padding: 0px 30px;
+        margin-top: 110px;
+
+
+
+    }
+
+    #home_text {
+        /* border: 1px solid yellow; */
+        width: 85%;
+        margin: auto;
+        height: 79.439px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #home_text>h1 {
+        /* border: 1px solid yellow; */
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 40.4px;
+        font-style: normal;
+        font-weight: 400;
+        height: 60.4375px;
+        letter-spacing: 0.408px;
+        line-height: 60.4464px;
+        margin-bottom: 20px;
+
+    }
+
+    #home_text>p {
+        /* border: 1px solid yellow; */
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        height: 40.375px;
+        line-height: 15.2px;
+        color: rgb(182, 182, 182);
+    }
+
+    #home_text>button {
+        /* border: 2px solid red; */
+        width: 140px;
+        height: 44px;
+        /* background-color: rgb(164, 162, 162); */
+        background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+        color: black;
+        border-radius: 50px;
+        margin-top: 50px;
+        /* margin-left: 44%; */
+    }
+
+    #homepage_2 {
+        /* border: 2px solid rgb(255, 251, 0); */
+        margin-top: 40px;
+        width: 95%;
+        height: 1500.516px;
+        padding: 80px 0px;
+        flex-direction: column;
+    }
+
+    #home_2 {
+        /* border: 1px solid aqua; */
+        width: 91%;
+        height: auto;
+        padding: 0px 12px;
+        /* padding: 0px 51px; */
+        /* display: flex;
+        justify-content: space-around;
+        flex-direction: column; */
+
+    }
+
+    #home_2>p:nth-child(1) {
+        /* border: 1px solid yellow; */
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(182, 182, 182);
+        text-align: left;
+        margin-top: 80PX;
+        margin-bottom: 5PX;
+    }
+
+    #home_2>h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 41.6px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.832px;
+        line-height: 48.5306px;
+        text-align: left;
+
+
+    }
+
+    #home_2>p:nth-last-child(2) {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(182, 182, 182);
+        text-align: left;
+        margin-top: 0px;
+        flex-wrap: wrap;
+    }
+
+    #home_2>button {
+        /* border: 2px solid red; */
+        width: 150px;
+        height: 44px;
+        /* background-color: rgb(164, 162, 162); */
+        background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 30% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+        color: black;
+        border-radius: 50px;
+        margin-top: 50px;
+        margin-right: 90%;
+        margin-bottom: 70PX;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+
+
+    }
+
+    #images {
+        /* border: 1px solid aqua; */
+        width: 82%;
+        height: 1000.516px;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 25px;
+        margin-right: 50px;
+        /* flex-direction: column; */
+    }
+
+    #left {
+        /* border: 1px dotted rgb(255, 17, 0); */
+        width: 100%;
+        height: 100%;
+        background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+        /* object-fit: fill; */
+        /* overflow: hidden; */
+        margin-bottom: 30px;
+
+    }
+
+    #right {
+        /* border: 1px dotted rgb(55, 0, 255); */
+        width: 100%;
+        height: 100%;
+        background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+        /* object-fit:cover;
+    overflow: hidden; */
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+#footer {
+    border: 2px solid green;
+    width: 100%;
+    height: 300px;
+}
