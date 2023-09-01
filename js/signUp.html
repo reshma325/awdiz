@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+   <form onsubmit="signUp(event)">
+    <label>Name </label><br/>
+    <input type="text" id="name"><br/>
+    <label>Email</label> <br/>
+    <input type="email" id="email"><br/>
+    <label>Password </label><br/>
+    <input type="password" id="password"><br/>
+    <label>Confirm Password</label><br/>
+    <input type="password" id="confirmPassword"><br/>
+    <input type="submit" id="sign up"><br/>
+   </form>
+   <button onclick='getusers()'>
+    Get all Users
+   </button>
+   <div id="tit"></div>
+   <script>
+    function signUp(event){
+        event.preventDefault();
+        const UserName= document.getElementById('name').value;
+        const UserEmail= document.getElementById('email').value;
+        const UserPassword = document.getElementById('password').value;
+        const UserConPassword = document.getElementById('confirmPassword').value;
+        console.log(UserName,UserEmail,UserPassword,UserConPassword);
+        if(UserName && UserEmail&& UserPassword&&UserConPassword){
+            if(UserPassword ===UserConPassword){
+                const UserObject={ email:UserEmail,name:UserName,password:UserPassword};
+
+            //   var array= localStorage.getItem('users')
+            var array = JSON.parse(localStorage.getItem("users")) || [];
+
+                console.log(array, "array");
+                console.log(UserObject ,"obj");
+                array.push(UserObject)
+                // arr.(UserObject);
+         
+                localStorage.setItem('users',JSON.stringify(array));
+                alert('SignUp Successful!' )
+
+            }else{
+                alert("Confirmed Password doesn't match the Password.");
+            }
+
+        }else{
+            alert("Fill all the fields");
+        }
+
+    };
+
+
+    function getusers(){
+        var storedemail= JSON.parse(localStorage.getItem("users"));
+        
+        var names;
+            for (let i = 0; i < storedemail.length; i++) {
+                var element = document.createElement("p");
+                document.getElementById("tit").innerHTML.append(storedemail[i].name);
+            }
+            
+
+    }
+
+   </script>
+    
+</body>
+</html>

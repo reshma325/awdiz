@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signIn</title>
+</head>
+
+<body>
+    <form onsubmit="signIn(event)">
+        <label>Email</label><br />
+        <input type="email " id="email" /><br />
+        <label>Password</label><br />
+        <input type="password" id="password" /><br />
+        <input type="submit" /><br />
+    </form>
+    <script>
+        function signIn(event) {
+            event.preventDefault();
+            var storedemail= JSON.parse(localStorage.getItem("users"));
+            var storedpassword = JSON.parse(localStorage.getItem("users"));
+            const UserEmail_ = document.getElementById('email').value;
+            const UserPassword_ = document.getElementById('password').value;
+            var testEmail,testPassword;
+            console.log(localStorage);
+            for (let i = 0; i < storedemail.length; i++) {
+                if(UserEmail_ === storedemail[i].email){
+                    testEmail = storedemail[i].email;
+                    testPassword = storedemail[i].password;
+                } ;
+            }
+            console.log(UserEmail_, UserPassword_,testEmail,testPassword );
+            if (UserEmail_ && UserPassword_) {
+                if (UserPassword_== testPassword) {
+
+                    alert('SUCCESSFUL SIGNUP!')
+
+                }else{
+                    alert('INCORRECT CREDENTIALS')
+
+                }
+
+            } else {
+                alert('FILL ALL THE FIELDS')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
