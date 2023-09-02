@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Products</title>
+</head>
+<body>
+    <form onsubmit="addProduct(event)">
+        <lable>Product Name</lable><br/>
+        <input type="text" placeholder="Type Prodcut Name here..." id="Pname"><br/>
+
+        <lable>Product Price</lable><br/>
+        <input type="number" placeholder="Type Prodcut Price here..." id="Pprice"><br/>
+        
+        <lable>Product Image</lable><br/>
+        <input type="text" placeholder="Paste Prodcut Image URL here..." id="Pimg"><br/>
+        
+        <input type="checkbox" id="Pcheck"><br/>
+        <p>I Accept all Terms & Conditions*</p>
+        
+        <input type="radio"value="Go live" class="Pradio"><lable>GO LIVE NOW!</lable><br/>
+        
+        <input type="submit" value="submit"><br/>
+        
+    </form>
+
+    <script>
+        // console.log('hi')
+        function addProduct(event){
+            event.preventDefault();
+            var name=document.getElementById('Pname').value;
+            var price=document.getElementById('Pprice').value;
+            var image=document.getElementById('Pimg').value;
+            var checkbox=document.getElementById('Pcheck');
+            var radio=document.getElementsByClassName('pradio');
+        
+            // console.log(radio[0].checked,'Hi');
+
+            if(name && price &&  image &&  checkbox.checked){
+                var prodcutsarray= JSON.parse(localStorage.getItem('allProducts'))||[];
+                prodcutsarray.push({name,price,image})
+                localStorage.setItem('allProducts',JSON.stringify(prodcutsarray))
+                document.getElementById('Pname').value= '';
+                document.getElementById('Pprice').value= '';
+                document.getElementById('Pimg').value= '';
+                alert('Prodcut added')
+
+            }else{
+                alert('All fields are mandtory..')
+            }
+            console.log('Bye!') 
+        }
+        // console.log('Bye')
+    </script>
+</body>
+</html>

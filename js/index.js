@@ -224,20 +224,76 @@
 
 // console.log(count )
 
-var count=1
+// var count=1
     
-for(i=1;i<=10;i++){
-count=count*i
+// for(i=1;i<=10;i++){
+// count=count*i
 
-}console.log(count, 'hi')
+// }console.log(count, 'hi')
+// var array = [1,2,3,4,5,60000,7,8,999, 102]
+// var max;
+// function maxArray(array){
+//     for (i = 0; i < array.length; i++){
 
+//         if(i == 0){
+//             max = array[i]
+//         }
+//         else if(array[i] > max){
+//             max = array[i];
+//         }
+//     }
+//     return max;
+// }
 
+// console.log(maxArray(array));
 
 //1+2+3+4+5
 //i=1 count= 0   hence 0=0+1
 // i= 2 count =1 hence 1=1+2
 // i=3 count =3  hence 3= 3+3
 //i=4 count = 6 hence 6=6+4
+
+
+
+
+
+// num= 99
+// count=0
+// for(j=2;j<num/2;j++){
+   
+//     if(num % j ==0){
+//         count=count+1;
+        
+//         break;
+        
+//     }
+
+// }
+
+// if(count==0){
+//     console.log('Prime')
+// }else{
+//     console.log('Non-Prime')
+// }
+var arr =[1,2,3,4,5,,6,7,8, 9,10,11,12,13,14];
+target=15;
+count=0
+for(i=0;i<arr.length-2;i++){
+    for(j= i+1; j<arr.length-1;j++){
+        for(k=j+1;k<arr.length;k++){
+            if(arr[i]+arr[j]+arr[k] == target){
+
+                count = count+1;
+                console.log( arr[i],arr[j],arr[k])
+                
+            }
+        }
+    }
+}console.log(count);
+
+
+
+
 
 
 
