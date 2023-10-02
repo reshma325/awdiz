@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movie Tickets, Plays,Sports,Events</title>
+    <link rel="icon" href="/bms/Images/pngegg.png" type="x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/ed509e22a0.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="webpage" , style="width: 100%; height: 5000px;">
+        <!-- Main nav bar -->
+        <div style="width: 100%;  height: 64px;background-color: rgb(51,53,69); color: white;   ">
+            <div style="width: 93% ; display:flex;justify-content:space-between; margin:auto; ; ">
+                <div style="display: flex; width: 78%;height: 60px;">
+                    <div>
+                        <img style="width: 115px; height: 35px;margin-top: 16px; "
+                            src="https://in.bmscdn.com/webin/common/icons/logo.svg" alt="">
+                    </div>
+
+                    <div
+                        style="display: flex; background-color:rgb(255,255,255);color: black; width: 62%; margin-left:20px; border: 1px solid rgb(189, 189, 189); border-radius: 5px; height: 35px; margin-top: 12px ; ">
+                        <div style="margin-top: 12px; margin-right: 10px; margin-left: 10px; color: rgb(153,153,153);">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                        </div>
+                        <div style="margin-top:9px; margin-left: 8px;">
+                            <input placeholder="Search for Movies,Events,Plays,Sports and Activities"
+                                style="font-size: 14px;font-family: Roboto,sans-serif; border: none; outline: none; width: 360px;height: 20px; color: rgb(153,153,153); " />
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div style="display: flex;  width: 18%; ">
+
+                    <div style="margin-top: 20px; margin-right: 50px; height: 25px; width: 40px;">
+                        <select style=" background-color: #333545; color:rgb(204,204,191); border: none;">
+                            <option style="font-size: 14px; line-height: 19px;">Mumbai</option>
+                            <option>Chennai</option>
+                            <option>Pune</option>
+                            <option>Kolkata</option>
+                            <option>Kochi</option>
+                            <option style="color: rgb(223,84,119);">View all</option>
+                        </select>
+                    </div>
+                    <div style="margin-top: 18px; ; margin-right: 30px; ">
+                        <button onclick="signUp()"
+                            style="background-color:rgb(231,65,98);color: white; cursor: pointer; border-radius: 4px; border: none; height: 25px; width: 65px;">
+                            Sign in </button>
+                    </div>
+
+                    <div style="margin-top: 23px;width: 22px; height: 14px; color: rgb(204,205,209);">
+                        <i class="fa-solid fa-bars fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- the sub navigation bar -->
+        <div style="height: 40px; color: white; background-color: rgb(31,37,51);">
+            <div style="width: 94%;height: 35px; display: flex; justify-content: space-between;margin: auto; ">
+                <div
+                    style="width: 60%; display: flex;justify-content: space-between; color:rgb(204, 204, 204);margin-top: 12px;">
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Movies</h3>
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Stream</h3>
+
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Events</h3>
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Plays</h3>
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Sports</h3>
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Activites</h3>
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif; font-weight: 400;">Buzz</h3>
+                    <div style="margin-top: -9px;">
+                        <p
+                            style="color: rgb(231, 54, 77); font-family: Roboto, sans-serif; font-size: 8px; font-weight: 500; margin-left: 235px;">
+                            NEW</p>
+
+                        <img src="https://assets-in.bmscdn.com/static/2023/08/cwc23.png"
+                            style="width: 238px; height: 16.5px;">
+
+
+                    </div>
+
+
+                </div>
+                <div style="width: 24%; display: flex;justify-content: space-between; color:white;margin-top: 13px;">
+                    <h3 style="font-size: 12px; font-family: Roboto, sans-serif;font-weight: 400">ListYourShow</h3>
+                    <h3 style="font-size: 12px; font-family: Roboto, sans-serif;font-weight: 400">Corporates</h3>
+                    <h3 style="font-size: 12px; font-family: Roboto, sans-serif;font-weight: 400">Offers</h3>
+                    <h3 style="font-size: 12px; font-family: Roboto, sans-serif;font-weight: 400">Gift cards</h3>
+                </div>
+            </div>
+        </div>
+        <div id="subnav_" style="width: 100%; height: 0.8%;  background-color: rgb(59, 66, 97);">
+            <div
+                style="width: 65%;height: 100%; display: flex;justify-content: space-around; color:rgb(255, 255, 255);margin-left: 3.4%;">
+                <div style=" padding: 1%;">
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400;">Your Orders</h3>
+
+                </div>
+                <div style=" padding: 1%;">
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400;">Stream Library</h3>
+                </div>
+                <div style=" padding: 1%;">
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400;">QuickPay</h3>
+
+                </div>
+                <div style=" padding: 1%;">
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400;">Rewards</h3>
+                </div>
+                <div style=" padding: 1%;">
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400;">Resturant Discounts
+                    </h3>
+                </div>
+                <div style="padding: 1%;">
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400;">Discount Store</h3>
+                </div>
+                <div style="padding: 1%;background-color: rgb(81, 91, 133);">
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif; font-weight: 400; ">
+                        Profile </h3>
+                </div>
+                <div style="padding: 1%; ">
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif; font-weight: 400;">Saved Devices</h3>
+                </div>
+
+            </div>
+        </div>
+        <div id="main_bg" style="background-color: rgb(242,245,249); width: 100%;height: 5000px;">
+
+            <div id="main_body" style="margin: auto; width: 50.5%; height: 6.1%; border: 1px solid transparent; ">
+                <div id="red"
+                    style="margin-top: 2%;border: 4px;  width: 581px;padding: 18px 64px; height:60px; display: flex;background:linear-gradient(98.18deg, rgb(43, 49, 72) 2.87%, rgb(136, 63, 85) 59.96%, rgb(235, 78, 98) 98.36%); ">
+                    <div id="picture"
+                        style="margin-top: 1px; width: 91.30px;height: 91.30px; border: 1px solid rgb(53, 53, 53);border-radius: 50%;background-color: white;">
+                        <img src="./Images/camera.png" alt=""
+                            style=" width: 40%;height: 40%;margin-top: 20%; margin-left: 30%;">
+                        <p
+                            style="font-size: 11px; line-height: 16x;letter-spacing: 0.2px;color: rgb(102 102 102);margin-left: 28%; font-family: Roboto, sans-serif;font-weight: 400">
+                            + Add</p>
+
+                    </div>
+                    <div id="name" style="width: 20%; height: 100%; margin-top: 6%;margin-left: 3%;">
+                        <p
+                            style="font-size: 21px;line-height: 27.93p; font-family: Roboto, sans-serif;font-weight: 700; color: white;">
+                            Hi, Guest
+                        </p>
+                    </div>
+
+                </div>
+                <div id="account_details"
+                    style="width: 581px;height: 160px;padding-left: 64px; padding-top: 36px;border-radius: 4px;  padding-right: 64px;   background-color: white;">
+                    <div id="head" style="width: 579px;height: 23px;margin-bottom: 16px; ">
+                        <p style="font-size: 18px;line-height:24px ;
+                 font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">Account Details</p>
+
+                    </div>
+                    <div id="email" style="width: 579px; height: 23px;display: flex; margin-bottom: 36px; ">
+                        <div id="email_l" style="width: 24%;height:100%;  padding-top: 0.2%;">
+                            <p style="font-size: 14px;line-height:20px ;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">Email Address
+                            </p>
+
+                        </div>
+                        <div id="email_r"
+                            style="width: 400px;height: 23px; display: flex; justify-content: space-between;">
+                            <div id="email_r_l" style="width: 286px; height: 23px;  display: flex;">
+                                <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                        font-family: Roboto, sans-serif;font-weight: 500; color: rgb(21, 21, 21);">
+                                    test.testing@gmail.com</p>
+                                <div id="verified"
+                                    style="width: 47px;background-color: rgb(201, 248, 211); height: 15px;margin-left: 5px;margin-top: 5px;">
+                                    <p style="font-size: 11px;line-height:16px ;letter-spacing: 0.2px;
+                            font-family: Roboto, sans-serif;font-weight: 500; color: rgb(88, 88, 88); margin-left: 2px;
+                            padding: 0.5px; ">Verified</p>
+
+                                </div>
+
+
+                            </div>
+                            <div id="email_r_r" style="display: flex;">
+                                <img src="./Images/edit.png" style="width: 14px;height: 14px; margin-top: 4px;">
+                                <p
+                                    style="font-size: 14px;line-height:20px ;letter-spacing: 0.2px;
+                      font-family: Roboto, sans-serif;font-weight: 400; color: rgb(220, 53, 75); margin-left: 5px;width: 24px;height:19px;">
+                                    Edit</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div id="mobile" style="width: 579px; height: 23px;display: flex;padding-bottom: 36px;">
+                        <div id="mobile_l" style="width: 140px;height:20px;">
+                            <p style="font-size: 14px;line-height:20px ;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">Mobile Number
+                            </p>
+
+                        </div>
+                        <div id="mobile_r"
+                            style="width: 400px;height: 23px; display: flex; justify-content: space-between;">
+                            <div id="mobile_r_l" style="width: 188px; height: 23px; margin-right: 8px; display: flex; ">
+                                <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                        font-family: Roboto, sans-serif;font-weight: 500; color: rgb(21, 21, 21);">+91
+                                    9876543210</p>
+                                <div id="verified"
+                                    style="width: 47px;background-color: rgb(201, 248, 211); height: 15px;margin-left: 10px;margin-top: 5px;">
+                                    <p style="font-size: 11px;line-height:16px ;letter-spacing: 0.2px;
+                            font-family: Roboto, sans-serif;font-weight: 500; color: rgb(88, 88, 88); margin-left: 2px;
+                            padding: 0.5px; ">Verified</p>
+
+                                </div>
+
+                            </div>
+                            <div id="mobile_r_r" style="display: flex;">
+                                <img src="./Images/edit.png" style="width: 14px;height: 14px; margin-top: 4px;">
+                                <p
+                                    style="font-size: 14px;line-height:20px ;letter-spacing: 0.2px;
+                      font-family: Roboto, sans-serif;font-weight: 400; color: rgb(220, 53, 75); margin-left: 5px;width: 24px;height:19px;">
+                                    Edit</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                
+
+
+
+
+            </div>
+
+
+
+            <div id="personal_details"
+                style="width: 45.5%;margin: auto;margin-left: 25%; height: 7.3%; margin-top: 16px; margin-bottom: 16px;border-radius: 4px; background-color: white; padding: 32px 64px;">
+                <div id="pd_head" style="width: 100%; height: 6.5%;margin-bottom: 16px;">
+                    <p style="font-size: 18px;line-height:24px ;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">Personal Details</p>
+
+                </div>
+                <div id="fname"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px;">
+                    <div id="fname_l" style="width: 12.2%; height: 100%; padding-top: 10px;">
+                        <p style="font-size: 14px;line-height:20px ;
+                        font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">First Name</p>
+
+                    </div>
+                    <div id="fname_r"
+                        style="width: 72.5%; height: 103%; border: 1px solid rgb(184, 184, 184); padding: 4px; border-radius: 8px;">
+                        <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                        font-family: Roboto, sans-serif;font-weight: 400; color: rgb(100, 100, 100); padding: 2px;">
+                            Enter first name here
+                        </p>
+                    </div>
+
+                </div>
+                <div id="lname"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px; margin-top: 36px ; ">
+                    <div id="lname_l" style="width: 12.2%; height: 100%; padding-top: 10px;">
+                        <p style="font-size: 14px;line-height:20px ;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">Last Name</p>
+
+                    </div>
+                    <div id="lname_r"
+                        style="width: 72.5%; height: 103%; border: 1px solid rgb(184, 184, 184); padding: 4px; border-radius: 8px;">
+                        <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(100, 100, 100); padding: 2px;">
+                            Enter last name here
+                        </p>
+                    </div>
+
+                </div>
+                <div id="birth"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px; margin-top: 36px ;">
+                    <div id="birth_l" style="width: 12.2%; height: 100%; padding-top: 10px;">
+                        <p style="font-size: 14px;line-height:20px ;
+                font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21); white-space: nowrap;">
+                            Birthday (Optional)</p>
+
+                    </div>
+                    <div id="birth_r"
+                        style="width: 72.5%; height: 103%; border: 1px solid rgb(184, 184, 184); padding: 4px; border-radius: 8px;justify-content: space-between; display: flex;">
+                        <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                font-family: Roboto, sans-serif;font-weight: 400; color: rgb(100, 100, 100); padding: 2px;">
+                            dd-mm-yy
+                        </p>
+                        <img src="./Images/date.png" style="width: 4%; height: 50%; margin-top: 1.5%;">
+                    </div>
+
+                </div>
+                <div id="gender"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px; margin-top: 36px ;">
+                    <div id="gender_l" style="width: 12.2%; height: 100%; padding-top: 10px;">
+                        <p style="font-size: 14px;line-height:20px ;
+                font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21); white-space: nowrap;">
+                            Identity (Optional)</p>
+
+                    </div>
+                    <div id="gender_r" style=" display: flex; width: 50%;height: 100%; margin-right: 24%">
+
+                        <div id="gender_r_r"
+                            style="width: 16.6%;text-align: center; height: 64.2%; border: 1px solid rgb(184, 184, 184); padding: 5px 12px; border-radius: 8px; margin-right: 10%;">
+                            <p style="font-size: 14px;line-height:20px ;
+                            font-family: Roboto, sans-serif;font-weight: 400; color: rgb(51, 51, 51);"> Woman</p>
+                        </div>
+                        <div id="gender_r_l"
+                            style="width: 15%; height: 70%; border: 1px solid rgb(184, 184, 184);text-align: center; padding: 5px 12px; border-radius: 8px;">
+                            <p style="font-size: 14px;line-height:20px ;
+                            font-family: Roboto, sans-serif;font-weight: 400; color: rgb(51, 51, 51);">Man</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="status"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px; margin-top: 36px ;">
+                    <div id="status_l" style="width: 12.2%; height: 100%; padding-top: 10px;">
+                        <p style="font-size: 14px;line-height:20px ;
+            font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21); white-space: nowrap;">
+                            Married ? (Optional)</p>
+
+                    </div>
+                    <div id="status_r" style=" display: flex; width: 50%;height: 100%; margin-right: 24%">
+
+                        <div id="status_r_r"
+                            style="width: 16.6%;text-align: center; height: 64.2%; border: 1px solid rgb(184, 184, 184); padding: 5px 12px; border-radius: 8px; margin-right: 10%;">
+                            <p style="font-size: 14px;line-height:20px ;
+                        font-family: Roboto, sans-serif;font-weight: 400; color: rgb(51, 51, 51);"> Yes</p>
+                        </div>
+                        <div id="status_r_l"
+                            style="width: 7%; height: 70%; border: 1px solid rgb(184, 184, 184);text-align: center; padding: 5px 12px; border-radius: 8px;">
+                            <p style="font-size: 14px;line-height:20px ;
+                        font-family: Roboto, sans-serif;font-weight: 400; color: rgb(51, 51, 51);">No</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="address"
+                style="width: 45.5%;margin: auto;margin-left: 25%; height: 9.2%; margin-top: 16px; margin-bottom: 16px;border-radius: 4px; background-color: white; padding: 32px 64px;">
+                <div id="add_head" style="width: 90%; height: 6.5%;margin-bottom: 16px;">
+                    <p style="font-size: 18px;line-height:24px ;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">Address (Optional)</p>
+
+                </div>
+                <div id="pin"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px;">
+                    <div id="pin_l" style="width: 16.2%; height: 100%; padding-top: 10px; ">
+                        <p style="font-size: 14px;line-height:20px ;
+                        font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">Area Pincode</p>
+
+                    </div>
+                    <div id="pin_r"
+                        style="width: 72.5%; height: 90%; border: 1px solid rgb(184, 184, 184); padding: 4px; border-radius: 8px; ">
+                        <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                        font-family: Roboto, sans-serif;font-weight: 400; color: rgb(100, 100, 100); padding: 2px;">
+                            E.g 560001
+                        </p>
+                    </div>
+
+                </div>
+                <div id="add_1"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px; margin-top: 36px ;">
+                    <div id="add_1_l" style="width: 16.2%; height: 100%; padding-top: 10px; ">
+                        <p style="font-size: 14px;line-height:20px ;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">Address Line 1</p>
+
+                    </div>
+                    <div id="add_1_r"
+                        style="width: 72.5%; height: 90%; border: 1px solid rgb(184, 184, 184); padding: 4px; border-radius: 8px;">
+                        <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(100, 100, 100); padding: 2px;">
+                            Flat no., House no., Building,
+                        </p>
+                    </div>
+
+                </div>
+                <div id="add_2"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px; margin-top: 36px ;">
+                    <div id="add_2_l" style="width: 16.2%; height: 100%; padding-top: 10px; ">
+                        <p style="font-size: 14px;line-height:20px ;
+                font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21); white-space: wrap;">
+                            Address Line 2 </p>
+
+                    </div>
+                    <div id="add_2_r"
+                        style="width: 72.5%; height: 90%; border: 1px solid rgb(184, 184, 184); padding: 4px; border-radius: 8px;justify-content: space-between; display: flex;">
+                        <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                font-family: Roboto, sans-serif;font-weight: 400; color: rgb(100, 100, 100); padding: 2px;">
+
+                            Area, Colony, Street, Sector, Village </p>
+
+                    </div>
+
+                </div>
+                <div id="land"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px;margin-top: 36px ;">
+                    <div id="land_l" style="width: 16.2%; height: 100%; padding-top: 10px; ">
+                        <p style="font-size: 14px;line-height:20px ;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);"> Landmark</p>
+
+                    </div>
+                    <div id="land_r"
+                        style="width: 72.5%; height: 90%; border: 1px solid rgb(184, 184, 184); padding: 4px; border-radius: 8px;">
+                        <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(100, 100, 100); padding: 2px;">
+                            E.g Prithvi Theater
+                        </p>
+                    </div>
+
+                </div>
+                <div id="city"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px;margin-top: 36px ;">
+                    <div id="city_l" style="width: 16.2%; height: 100%; padding-top: 10px;">
+                        <p style="font-size: 14px;line-height:20px ;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">Town / City</p>
+
+                    </div>
+                    <div id="city_r"
+                        style="width: 72.5%; height: 90%; border: 1px solid rgb(184, 184, 184); padding: 4px; border-radius: 8px;">
+                        <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(100, 100, 100); padding: 2px;">
+                            E.g Mumbai
+                        </p>
+                    </div>
+
+                </div>
+                <div id="state"
+                    style="width: 100%; height: 8.5%; display: flex ; justify-content: space-between; margin-bottom: 16px;margin-top: 36px ;">
+                    <div id="state_l" style="width: 16.2%; height: 100%; padding-top: 10px;">
+                        <p style="font-size: 14px;line-height:20px ;
+                font-family: Roboto, sans-serif;font-weight: 400; color: rgb(21, 21, 21);">State</p>
+
+                    </div>
+                    <div id="state_r"
+                        style="width: 72.5%; height: 90%; border: 1px solid rgb(184, 184, 184); padding: 4px; border-radius: 8px;">
+                        <p style="font-size: 16px;line-height:24px ;letter-spacing: 0.2px;
+                font-family: Roboto, sans-serif;font-weight: 400; color: rgb(100, 100, 100); padding: 2px;">
+                            E.g Maharashtra
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="terms" style="width: 100%; height: 40px; padding-top: 4x; padding-bottom: 20px;">
+                <p style="font-size: 10px;line-height:16px ;
+                font-family: Roboto, sans-serif;font-weight: 400; color: rgb(102, 102, 102); text-align: center;">
+                    I agree to <a href="https://in.bookmyshow.com/static/tnc-purchase/" style="font-size: 10px;line-height:16px ;
+                    font-family: Roboto, sans-serif;font-weight: 400; color: rgb(102, 102, 102);">Terms &
+                        Conditions</a> and <a href="https://in.bookmyshow.com/static/tnc-privacy/" style="font-size: 10px;line-height:16px ;
+                        font-family: Roboto, sans-serif;font-weight: 400; color: rgb(102, 102, 102);">Privacy
+                        Policy</a>
+                </p>
+
+            </div>
+            <div id="online" style="width: 100%; height: 45px;background-color: white;">
+                <div id="online_inner" style="width: 90%; height: 14px; padding: 15px; margin: auto;">
+                    <Div style="width: 98px; height: 14px; display: flex;">
+                        <p
+                            style="font-size: 12px;
+                        font-family: Roboto, sans-serif;font-weight: 400; color: rgb(170, 171, 172); text-align: start; white-space: nowrap;">
+                            Online Tickets </p>
+                        <i class="fa-solid fa-arrow-right-long fa-2xs"
+                            style="color:rgb(170, 171, 172) ;margin-top: 7px; margin-left: 8px;"></i>
+                        <p
+                            style="font-size: 12px;
+                        font-family: Roboto, sans-serif;font-weight: 400; color: rgb(170, 171, 172); text-align: start; white-space: nowrap; margin-left: 7px;">
+                            My Profile edit</p>
+
+                    </Div>
+
+                </div>
+
+            </div>
+
+            <div id="privacy" style="width: 100%; height: 115px;">
+                <div id="privacy_inner" style="width: 90%; height: 85px; margin: auto; padding: 15px; ">
+                    <div id="privacy_head" style="width: 100%; height: 38px;">
+                        <p style="font-size: 16px;line-height: 17.6px;letter-spacing: 0.1px;
+                        font-family: Roboto, sans-serif;font-weight: 550; color: rgb(127, 127, 127); text-align: left; white-space: nowrap;">
+                            Privacy Note
+                        </p>
+
+                    </div>
+                    <div id="privacy_det" style="width: 100%; height: 47px; padding-bottom: 15px;">
+                        <p  style="font-size: 12px;line-height: 16px;
+                        font-family: Roboto, sans-serif;font-weight: 400; color: rgb(127, 127, 127); text-align: justify;">
+                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<a href="https://in.bookmyshow.com/privacy" style="text-decoration: none; color: rgb(220, 53, 88);"> labore et dolore magna aliqua.</a> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                             ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                              voluptate <a href="https://in.bookmyshow.com/privacy" style="text-decoration: none; color: rgb(220, 53, 88);">velit esse cillum</a> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div style="width: 100%; height: 800px; background-color: rgb(49, 48, 53);;">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

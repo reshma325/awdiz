@@ -145,7 +145,7 @@
 // for(i=0;i<strings.length;i++){
 //     // console.log(strings[i].length);
 //     length[i]=strings[i].length;
-    
+
 
 
 // }
@@ -168,13 +168,13 @@
 // for(j = 100 ; j<=999;j++){
 //     num = j;
 //     for( i=0;i<=4;i++ ){
-        
+
 //         if(parseInt(num%10)==7){
 //             count++;
 //         }
 //         num= parseInt(num/10);
 //         // console.log(num);   
-    
+
 //     } 
 // }
 //   console.log(count);
@@ -187,7 +187,7 @@
 // var count =0
 // for(i=0; i<=2;i++){
 //     num2=parseInt(num%10);
-   
+
 //     count = count + num2*num2*num2;
 //     num=parseInt(num/10);
 
@@ -208,7 +208,7 @@
 // var num4=0
 // var count =0;
 // for( i= 0;i<=2;i++){
-    
+
 //     count = count*10 + parseInt(num%10)
 //     //num= parseInt(num3/10);
 //     //console.log(num4, 'Hi')
@@ -217,7 +217,7 @@
 //     // console.log(count ,"1st");
 //     num=parseInt(num/10);
 //     // console.log(num, '2nd')
-    
+
 
 
 // }
@@ -225,7 +225,7 @@
 // console.log(count )
 
 // var count=1
-    
+
 // for(i=1;i<=10;i++){
 // count=count*i
 
@@ -260,12 +260,12 @@
 // num= 99
 // count=0
 // for(j=2;j<num/2;j++){
-   
+
 //     if(num % j ==0){
 //         count=count+1;
-        
+
 //         break;
-        
+
 //     }
 
 // }
@@ -275,30 +275,91 @@
 // }else{
 //     console.log('Non-Prime')
 // }
-var arr =[1,2,3,4,5,,6,7,8, 9,10,11,12,13,14];
-target=15;
-count=0
-for(i=0;i<arr.length-2;i++){
-    for(j= i+1; j<arr.length-1;j++){
-        for(k=j+1;k<arr.length;k++){
-            if(arr[i]+arr[j]+arr[k] == target){
+// var arr =[1,2,3,4,5,,6,7,8, 9,10,11,12,13,14];
+// target=15;
+// count=0
+// for(i=0;i<arr.length-2;i++){
+//     for(j= i+1; j<arr.length-1;j++){
+//         for(k=j+1;k<arr.length;k++){
+//             if(arr[i]+arr[j]+arr[k] == target){
 
-                count = count+1;
-                console.log( arr[i],arr[j],arr[k])
-                
-            }
+//                 count = count+1;
+//                 console.log( arr[i],arr[j],arr[k])
+
+//             }
+//         }
+//     }
+// }console.log(count);
+// question1
+// var n = -2
+// var num = ["call","call","call"];
+// function count(n){
+//   var num_arr = []
+// for (i = 0; i < num.length;i++) {
+//     num_arr.push(n++);
+//     //console.log(n++)
+//     }
+//     return num_arr ;
+// }
+// console.log(count(n))
+
+// question2
+// var init= 5;
+// var result=[];
+// var createCounter = function(init) {
+
+// for(i=init;i<=init;i++){
+//     console.log(i,"hi")
+//   result.push(init++,"hiii");
+//   result.push(init--);
+//   result.push(init+ 2);
+//   result.push(init+3);
+
+
+
+
+
+// }
+// return result;
+
+// };
+// console.log(createCounter(init));
+// var hours = [0,1,2,3,4];
+// var target = 2;
+// var count=0;
+// var numberOfEmployeesWhoMetTarget = function(hours,target,count) {
+
+//     for(i=0;i<hours.length;i++){
+
+//         if(i>=target){
+//            count=count+1;
+
+
+//         }
+
+//     }
+//     return count; 
+// };
+// console.log(numberOfEmployeesWhoMetTarget(count));
+var nums = [1, 2, 3, 4]
+var result = [];
+var sum =0;
+var sumOfSquares = function (nums) {
+    for (i = 1; i <= nums.length; i++) {
+        // console.log(i, 'if')
+        if (nums.length % i === 0) {
+            result.push(i);
+            console.log(result, 'hi')
+
         }
     }
-}console.log(count);
+    return result;
+
+}; 
+console.log(sumOfSquares(nums));
+// console.log(result)
 
 
 
-
-
-
-
-
-
-
-
-
+  const map1 = result.map((x) => x * x);
+  

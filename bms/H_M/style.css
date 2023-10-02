@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#screen{
+    width: 99.6%;
+    height: 2000px;
+    border: 3px solid rgb(235, 7, 7);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+}
+#top_nav{
+    width: 100%;
+    height: ;
+}

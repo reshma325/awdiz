@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    
+</head>
+<body>
+
+    <div id="slideshow" style="width: 300px; height: 200px; overflow: hidden;">
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.stack.imgur.com%2FszolDl.png&tbnid=yCul4FNAUZRuHM&vet=12ahUKEwi0v7Xm3aOBAxWxpekKHUOcCwMQMygAegQIARBO..i&imgrefurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F36065000%2Fhow-to-wrap-a-div-containing-text-around-another-div&docid=N0cNKE16N_hB7M&w=640&h=305&q=how%20wrap%20text%20in%20a%20div&ved=2ahUKEwi0v7Xm3aOBAxWxpekKHUOcCwMQMygAegQIARBO" style="width: 100%; height: auto; transition: opacity 1s;">
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.stack.imgur.com%2F2tAl4.png&tbnid=jIR0MuF5DL4UcM&vet=12ahUKEwi0v7Xm3aOBAxWxpekKHUOcCwMQMygBegQIARBQ..i&imgrefurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F23866200%2Fwrap-text-around-both-sides-of-div&docid=mzfl164LMg_j5M&w=366&h=312&q=how%20wrap%20text%20in%20a%20div&ved=2ahUKEwi0v7Xm3aOBAxWxpekKHUOcCwMQMygBegQIARBQ" style="width: 100%; height: auto; transition: opacity 1s;">
+        <img src="" style="width: 100%; height: auto; transition: opacity 1s;">
+      </div>
+      
+      <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll("#slideshow img");
+      
+        function nextImage() {
+          images[currentImageIndex].style.opacity = 0;
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          images[currentImageIndex].style.opacity = 1;
+        }
+      
+        setInterval(nextImage, 3000); // Change image every 3 seconds
+      </script>
+      
+      
+
+</body>
+</html>

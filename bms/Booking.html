@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawan 2D Movie, Showtimes in Mumbai & Online Ticket Booking</title>
+    <link rel="icon" href="/bms/Images/pngegg.png" type="x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/ed509e22a0.js" crossorigin="anonymous">
+
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="webpage" style="width: 100%; height: 5000px;">
+        <!-- main navigation bar -->
+        <div style="width: 100%;  height: 64px;background-color: rgb(51,53,69); color: white;   ">
+            <div style="width: 93% ; display:flex;justify-content:space-between; margin:auto; ; ">
+                <div style="display: flex; width: 78%;height: 60px;">
+                    <div>
+                        <img style="width: 115px; height: 35px;margin-top: 16px; "
+                            src="https://in.bmscdn.com/webin/common/icons/logo.svg" alt="">
+                    </div>
+
+                    <div
+                        style="display: flex; background-color:rgb(255,255,255);color: black; width: 62%; margin-left:20px; border: 1px solid rgb(189, 189, 189); border-radius: 5px; height: 35px; margin-top: 12px ; ">
+                        <div style="margin-top: 12px; margin-right: 10px; margin-left: 10px; color: rgb(153,153,153);">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                        </div>
+                        <div style="margin-top:9px; margin-left: 8px;">
+                            <input placeholder="Search for Movies,Events,Plays,Sports and Activities"
+                                style="font-size: 14px;font-family: Roboto,sans-serif; border: none; outline: none; width: 360px;height: 20px; color: rgb(153,153,153); " />
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div style="display: flex;  width: 18%; ">
+
+                    <div style="margin-top: 20px; margin-right: 50px; height: 25px; width: 40px;">
+                        <select style=" background-color: #333545; color:rgb(204,204,191); border: none;">
+                            <option style="font-size: 14px; line-height: 19px;">Mumbai</option>
+                            <option>Chennai</option>
+                            <option>Pune</option>
+                            <option>Kolkata</option>
+                            <option>Kochi</option>
+                            <option style="color: rgb(223,84,119);">View all</option>
+                        </select>
+                    </div>
+                    <div style="margin-top: 18px; ; margin-right: 30px; ">
+                        <button onclick="signUp()"
+                            style="background-color:rgb(231,65,98);color: white; cursor: pointer; border-radius: 4px; border: none; height: 25px; width: 65px;">
+                            Sign in </button>
+                    </div>
+
+                    <div style="margin-top: 23px;width: 22px; height: 14px; color: rgb(204,205,209);">
+                        <i class="fa-solid fa-bars fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- sub -->
+        <div style="height: 40px; color: white; background-color: rgb(31,37,51);">
+            <div style="width: 94%;height: 35px; display: flex; justify-content: space-between;margin: auto; ">
+                <div
+                    style="width: 60%; display: flex;justify-content: space-between; color:rgb(204, 204, 204);margin-top: 12px;">
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Movies</h3>
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Stream</h3>
+
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Events</h3>
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Plays</h3>
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Sports</h3>
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif;font-weight: 400">Activites</h3>
+                    <h3 style="font-size: 14px; font-family: Roboto, sans-serif; font-weight: 400;">Buzz</h3>
+                    <div style="margin-top: -9px;">
+                        <p
+                            style="color: rgb(231, 54, 77); font-family: Roboto, sans-serif; font-size: 8px; font-weight: 500; margin-left: 235px;">
+                            NEW</p>
+
+                        <img src="https://assets-in.bmscdn.com/static/2023/08/cwc23.png"
+                            style="width: 238px; height: 16.5px;">
+
+
+                    </div>
+
+
+                </div>
+                <div style="width: 24%; display: flex;justify-content: space-between; color:white;margin-top: 13px;">
+                    <h3 style="font-size: 12px; font-family: Roboto, sans-serif;font-weight: 400">ListYourShow</h3>
+                    <h3 style="font-size: 12px; font-family: Roboto, sans-serif;font-weight: 400">Corporates</h3>
+                    <h3 style="font-size: 12px; font-family: Roboto, sans-serif;font-weight: 400">Offers</h3>
+                    <h3 style="font-size: 12px; font-family: Roboto, sans-serif;font-weight: 400">Gift cards</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="jawan main"
+            style="width: 97.5%; height: 85px; background-color:rgb(51,53,69) ;padding: 30px 20px 15px 15px;">
+            <div id="jawan_name" style="width: 100%;height: 43px;margin-top: 10px; ">
+                <h1
+                    style="font-family:Roboto; font-size: 36px; font-weight: 400;color: rgb(244,244,244); float: left;text-align: left;">
+                    Jawan - Hindi</h1>
+
+            </div>
+            <div id="jawan_dis" style="width: 11%; height: 25px; display: flex;justify-content: space-between;">
+                <div>
+                    <img src="/bms/Images/svgviewer-png-output.png" style="width: 90%;margin-top: 5px;  height: 110%; ">
+                </div>
+                <div
+                    style="width: 32%; text-align: center; margin-top: 10px;padding-top: 0.3%; height: 53%;border: 1px solid rgb(153,153,153);  border-radius: 10px;font-family:Roboto; font-size: 10px; font-weight: 400;color: rgb(153,153,153); float: left;">
+                    <p>ACTION</p>
+
+                </div>
+                <div
+                    style="width: 40%; text-align: center;margin-top: 10px;padding-top: 0.3%;   height: 53%; border: 1px solid rgb(153,153,153); border-radius: 10px;font-family:Roboto; font-size: 10px; font-weight: 400;color: rgb(153, 153, 153); float: left;">
+                    <p>THRILLER</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="dates" style="width:100%;height: 1.3%;  display: flex;justify-content: space-between;">
+            <div id="dates_1" style=" width: 25%; display: flex; justify-content: space-between;">
+                <div style="width: 20px ;margin-top: 5%;margin-left: 2%;">
+                    <i class="fa-solid fa-chevron-left fa-lg" style="color: #666666; "></i>
+
+                </div>
+                <div style=" width: 80%; display: flex; justify-content: space-between; margin-top: 1%;">
+                    <div
+                        style="width: 13%;padding:1.7%; height: 72%; background-color: rgb(248, 68, 100); border-radius: 8px;">
+                        <p
+                            style="color: white; font-size: 10px;font-family:Roboto;  font-weight: 500; text-align: center;">
+                            THU
+                        </p>
+
+
+                        <p
+                            style="color: white; font-size: 16px;font-family:Roboto;line-height: 18px;  font-weight: 600; text-align: center;">
+                            07</p>
+                        <p
+                            style=" color: white;font-size: 10px;font-family:Roboto;  font-weight: 500; text-align: center;">
+                            SEP</p>
+                    </div>
+                    <div style="width: 13%;padding:1.7%; height: 72%;  border-radius: 8px;">
+                        <p
+                            style="color: rgb(102, 102, 102); font-size: 10px;font-family:Roboto;  font-weight: 500; text-align: center;">
+                            FRI
+                        </p>
+
+
+                        <p
+                            style="color: rgb(51, 51, 51); font-size: 16px;font-family:Roboto;line-height: 18px;  font-weight: 600; text-align: center;">
+                            08</p>
+                        <p
+                            style=" color: rgb(102, 102, 102);font-size: 10px;font-family:Roboto;  font-weight: 500; text-align: center;">
+                            SEP</p>
+                    </div>
+                    <div style="width: 13%;padding:1.7%; height: 72%;  border-radius: 8px;">
+                        <p
+                            style="color: rgb(102, 102, 102); font-size: 10px;font-family:Roboto;  font-weight: 500; text-align: center;">
+                            SAT
+                        </p>
+
+
+                        <p
+                            style="color: rgb(51, 51, 51); font-size: 16px;font-family:Roboto;line-height: 18px;  font-weight: 600; text-align: center;">
+                            09</p>
+                        <p
+                            style=" color: rgb(102, 102, 102);font-size: 10px;font-family:Roboto;  font-weight: 500; text-align: center;">
+                            SEP</p>
+                    </div>
+                    <div style="width: 13%;padding:1.7%; height: 72%; border-radius: 8px;">
+                        <p
+                            style="color:rgb(102, 102, 102); font-size: 10px;font-family:Roboto;  font-weight: 500; text-align: center;">
+                            SUN
+                        </p>
+
+
+                        <p
+                            style="color: rgb(51, 51, 51); font-size: 16px;font-family:Roboto;line-height: 18px;  font-weight: 600; text-align: center;">
+                            10</p>
+                        <p
+                            style=" color:rgb(102, 102, 102);font-size: 10px;font-family:Roboto;  font-weight: 500; text-align: center;">
+                            SEP</p>
+                    </div>
+                    <div style="width: 13%;padding:1.7%; height: 72%; ; border-radius: 8px;">
+                        <p
+                            style="color: rgb(102, 102, 102); font-size: 10px;font-family:Roboto;  font-weight: 500; text-align: center;">
+                            MON
+                        </p>
+
+
+                        <p
+                            style="color: rgb(51, 51, 51); font-size: 16px;font-family:Roboto;line-height: 18px;  font-weight: 600; text-align: center;">
+                            11</p>
+                        <p
+                            style=" color:rgb(102, 102, 102);font-size: 10px;font-family:Roboto;  font-weight: 500; text-align: center;">
+                            SEP</p>
+                    </div>
+
+                </div>
+                <div style="width: 20px ;margin-top: 5%;margin-left: 2%;">
+                    <i class="fa-solid fa-chevron-right fa-lg" style="color: #666666;"></i>
+
+                </div>
+
+
+            </div>
+            <div id="dates_2" style=" width: 48%;display: flex; ">
+                <div style="width:16.5%; padding: 15px; border-left: 1px solid rgb(153,153,153);margin-top: 1%;">
+
+                    <select
+                        style="border: none; color:rgb(12, 12, 12);font-size: 14px;font-family:Roboto;  font-weight: 500; text-align: left;">
+                        <option>Hindi-2D</option>
+                        <option>Hindi-4DX</option>
+                        <option>Hindo-IMX 2D</option>
+                        <option>Tamil-2D</option>
+                    </select>
+
+                </div>
+                <div style="width:19.7%; border-left: 1px solid rgb(153,153,153);padding: 15px;margin-top: 1%;">
+                    <select
+                        style="border: none; color:rgb(89, 88, 88);font-size: 12px;font-family:Roboto;  font-weight: 400; text-align: left;">
+                        <option value="" style="border:none; ">Filter Sub Regions</option>
+                        <option>Mumbai: Western</option>
+                        <option>Mumbai:South/Central</option>
+                        <option>Navi Mumbai</option>
+                        <option>Thane</option>
+                        <option>Kalyan</option>
+                        <option>Ulhasnagar</option>
+
+
+                    </select>
+                </div>
+                <div style="width:19.7%; border-left: 1px solid rgb(153,153,153);padding: 15px;margin-top: 1%;">
+                    <select
+                        style="border: none; color:rgb(89, 88, 88);font-size: 12px;font-family:Roboto;  font-weight: 400; text-align: left;">
+                        <option value="" style="border:none; ">Filter Price Range</option>
+                        <option>0-100</option>
+                        <option>101-200</option>
+                        <option>201-300</option>
+                        <option>301-400</option>
+                        <option>401-500</option>
+                        <option>501-600</option>
+                        <option>601-700</option>
+                        <option>701-800</option>
+                        <option>801-900</option>
+                        <option>901-1000</option>
+
+
+                    </select>
+
+
+                </div>
+                <div style="width:19.7%;border-left: 1px solid rgb(153,153,153);padding: 15px;margin-top: 1%;">
+                    <select
+                        style="border: none; color:rgb(89, 88, 88);font-size: 12px;font-family:Roboto;  font-weight: 400; text-align: left;">
+                        <option value="" style="border:none; ">Filter Show Timings</option>
+                        <option>Morning</option></br />
+                        <option>Afternoon</option>
+                        <option>Evening</option>
+                        <option>Night</option>
+
+
+
+                    </select>
+
+                </div>
+                <div style="width:2.4%; border-left: 1px solid rgb(153,153,153);padding: 15px;margin-top: 1%;">
+                    <i class="fa-solid fa-magnifying-glass " style="color: #4e4e4e; margin-top: 20%;"></i>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="main_background" style="background-color: #f1f1f1; width: 99.99%; height: 2500px; padding-top: 20px; ">
+            <div id="main_contain"
+                style="width: 95%; height: 2500px; background-color: white; padding: 13px 20px;margin-left: 15px; ">
+                <div id="main_nav"
+                    style="width: 98%; height:1%; border-bottom: 1px solid #f2f2f2; padding: 8px 16px 15px  16px;">
+                    <div style="width: 100%; height: 1%; display: flex; justify-content: end;">
+                        <div style="display: flex ;width: 6.5%;height: 15px;">
+                            <i class="fa-solid fa-circle fa-xs" style="color: #08b932;  margin-top: 10px;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;">
+                                AVALIABLE</p>
+                        </div>
+                        <div style="display: flex;width: 7%;height: 15px;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fe501b; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 15%;">
+                                FAST-FILLING</p>
+                        </div>
+                        <div style="display: flex ;width: 10.1%;height: 15px;">
+
+                            <i class="fa-regular fa-closed-captioning"
+                                style="color: #1caf08; width: 28%; margin-top: 4px;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;">
+                                SUBTITILE LANGUAGE</p>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div id="showlist1"
+                    style="width: 100%;height: 7.3%;padding: 13px 20px; display: flex;justify-content: space-between; border-bottom: 1px solid rgb(239,241,243);">
+                    <div id="right" style="width: 30%; height: 100%; display: flex;justify-content: space-between;">
+                        <div id="like" style="width: 15px;height: 63px; margin-top: 5px;">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #c7c7c7;"></i>
+                        </div>
+                        <div id="right_main" style="width: 100%; height: 100%; margin-left: 15px;">
+                            <div id="name" style="width: 100%; height: 40%;  display: flex;">
+                                <div id="name_" style="width: 60%;height: 100%;  margin-left: 5px ;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 700; color: #4e4e4e;text-align: left;margin-top: 2px;">
+                                        Ajanta Cinema Cinex:Borivali (W) Newly Renovated</p>
+
+                                </div>
+                                <div id="info" style="width: 20%; height: 100%; display: flex;">
+                                    <img src="./Images/info.png" style="width: 20px; height: 20px;margin-top: 4px;">
+                                    <p
+                                        style="font-size: 9px;font-family:Roboto;  font-weight: 400; color: #4e4e4e;margin-top: 5px;margin-left: 1px;">
+                                        INFO</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;width: 80%;height: 60%;  margin-top: 5px;">
+                                <div id="mtickect" style="width: 50%; height: 100%; display: flex;">
+
+                                    <img src="./Images/phone_.png"
+                                        style="color: #4abd5d;width: 30px;height:30px;margin-top: 2px;margin-left: 0px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;margin-top: 12px;">
+                                        M-Ticket
+                                    </p>
+
+
+                                </div>
+                                <div id="food" style="width: 50%; height: 100%; display: flex;">
+                                    <img src="./Images/food_.png"
+                                        style="color: #fe501b; width: 30px;height: 30px; margin-top: 2px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #fc7b24;margin-top: 6px; margin-left: 5px;">
+                                        Food & Bavrages
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="left" style="width: 100%;height: 100%;">
+                        <div id="left_main"
+                            style="width: 65%; height: 60%; display: flex;justify-content: space-between;">
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px; border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    9:00 AM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    12:15 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    3:30 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    7:00 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    10:30 PM
+                                </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby
+                                </p>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fcb933; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 1%;">
+                                Cancellation Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="showlist2"
+                    style="width: 100%;height: 7.3%;padding: 13px 20px; display: flex;justify-content: space-between; border-bottom: 1px solid rgb(239,241,243);">
+                    <div id="right" style="width: 30%; height: 100%; display: flex;justify-content: space-between;">
+                        <div id="like" style="width: 15px;height: 63px; margin-top: 5px;">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #c7c7c7;"></i>
+                        </div>
+                        <div id="right_main" style="width: 100%; height: 100%; margin-left: 15px;">
+                            <div id="name" style="width: 100%; height: 40%;  display: flex;">
+                                <div id="name_" style="width: 60%;height: 100%;  margin-left: 5px ;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 700; color: #4e4e4e;text-align: left;margin-top: 2px;">
+                                        Bahar Cinema:Vile Parle (E)</p>
+
+                                </div>
+                                <div id="info" style="width: 20%; height: 100%; display: flex;">
+                                    <img src="./Images/info.png" style="width: 20px; height: 20px;margin-top: 4px;">
+                                    <p
+                                        style="font-size: 9px;font-family:Roboto;  font-weight: 400; color: #4e4e4e;margin-top: 5px;margin-left: 1px;">
+                                        INFO</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;width: 80%;height: 60%;">
+                                <div id="mtickect" style="width: 50%; height: 100%; display: flex;">
+
+                                    <img src="./Images/phone_.png"
+                                        style="color: #4abd5d;width: 30px;height:30px;margin-top: 2px;margin-left: 0px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;margin-top: 12px;">
+                                        M-Ticket
+                                    </p>
+
+
+                                </div>
+                                <div id="food" style="width: 50%; height: 100%; display: flex;">
+                                    <img src="./Images/food_.png"
+                                        style="color: #fe501b; width: 30px;height: 30px; margin-top: 2px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #fc7b24;margin-top: 6px; margin-left: 5px;">
+                                        Food & Bavrages</p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="left" style="width: 100%;height: 100%;">
+                        <div id="left_main"
+                            style="width: 40%; height: 60%; display: flex;justify-content: space-between;">
+
+
+                            <div
+                                style="width: 20%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto; font-weight: 400; color: #4abd5d;text-align: center;margin-top: 10%;">
+                                    3:30 PM </p>
+
+                            </div>
+                            <div
+                                style="width: 20%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;margin-top: 10%;">
+                                    7:00 PM </p>
+
+                            </div>
+                            <div
+                                style="width: 20%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;margin-top: 10%;">
+                                    10:30 PM
+                                </p>
+
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fcb933; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 1%;">
+                                Cancellation Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="showlist3"
+                    style="width: 100%;height: 12.3%;padding: 13px 20px; display: flex;justify-content: space-between; border-bottom: 1px solid rgb(239,241,243);">
+                    <div id="right" style="width: 30%; height: 100%; display: flex;justify-content: space-between;">
+                        <div id="like" style="width: 15px;height: 63px; margin-top: 5px;">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #c7c7c7;"></i>
+                        </div>
+                        <div id="right_main" style="width: 100%; height: 100%; margin-left: 15px;">
+                            <div id="name" style="width: 100%; height: 40%;  display: flex;">
+                                <div id="name_" style="width: 60%;height: 100%;  margin-left: 5px ;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 700; color: #4e4e4e;text-align: left;margin-top: 2px;">
+                                        Cinepolis: Fun Republic Mall, Andheri (W)</p>
+
+                                </div>
+                                <div id="info" style="width: 20%; height: 100%; display: flex;">
+                                    <img src="./Images/info.png" style="width: 20px; height: 20px;margin-top: 4px;">
+                                    <p
+                                        style="font-size: 9px;font-family:Roboto;  font-weight: 400; color: #4e4e4e;margin-top: 5px;margin-left: 1px;">
+                                        INFO</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;width: 80%;height: 60%;  margin-top: 5px;">
+                                <div id="mtickect" style="width: 50%; height: 100%; display: flex;">
+
+                                    <img src="./Images/phone_.png"
+                                        style="color: #4abd5d;width: 30px;height:30px;margin-top: 2px;margin-left: 0px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;margin-top: 12px;">
+                                        M-Ticket
+                                    </p>
+
+
+                                </div>
+                                <div id="food" style="width: 50%; height: 50%; display: flex; ">
+                                    <img src="./Images/food_.png"
+                                        style="color: #fe501b; width: 30px;height: 30px; margin-top: 2px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #fc7b24;margin-top: 6px; margin-left: 5px;">
+                                        Food & Bavrages
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="left" style="width: 100%;height: 100%;">
+                        <div id="left_main" style="width: 95%; height: 60%; ">
+                            <div id="line_a"
+                                style=" width: 100%; display: flex;justify-content: space-between;margin-bottom: 15px;">
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px; border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color:#ff6600;text-align: center;">
+                                        7:00 AM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby 7.1</p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        8:00 AMM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS</p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        9:00 AM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS</p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        10:15 AM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        Dolby &.1 </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        11:15 AM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        12:15 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        2:00 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        Dolby 7.1
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div id="line_b" style=" width: 100%; display: flex;justify-content: space-between;">
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        2:55 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        3:55 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        6:35 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        7:35 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        9:30 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby 7.1
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        10:15 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        11:15 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div style="display: flex; margin-top: 35px;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fcb933; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 1%;">
+                                Cancellation Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="showlist1"
+                    style="width: 100%;height: 7.3%;padding: 13px 20px; display: flex;justify-content: space-between; border-bottom: 1px solid rgb(239,241,243);">
+                    <div id="right" style="width: 30%; height: 100%; display: flex;justify-content: space-between;">
+                        <div id="like" style="width: 15px;height: 63px; margin-top: 5px;">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #c7c7c7;"></i>
+                        </div>
+                        <div id="right_main" style="width: 100%; height: 100%; margin-left: 15px;">
+                            <div id="name" style="width: 100%; height: 40%;  display: flex;">
+                                <div id="name_" style="width: 60%;height: 100%;  margin-left: 5px ;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 700; color: #4e4e4e;text-align: left;margin-top: 2px;">
+                                        Cinepolis: Fun Republic Mall, Andheri (W)</p>
+
+                                </div>
+                                <div id="info" style="width: 20%; height: 100%; display: flex;">
+                                    <img src="./Images/info.png" style="width: 20px; height: 20px;margin-top: 4px;">
+                                    <p
+                                        style="font-size: 9px;font-family:Roboto;  font-weight: 400; color: #4e4e4e;margin-top: 5px;margin-left: 1px;">
+                                        INFO</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;width: 80%;height: 60%;  margin-top: 5px;">
+                                <div id="mtickect" style="width: 50%; height: 100%; display: flex;">
+
+                                    <img src="./Images/phone_.png"
+                                        style="color: #4abd5d;width: 30px;height:30px;margin-top: 2px;margin-left: 0px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;margin-top: 12px;">
+                                        M-Ticket
+                                    </p>
+
+
+                                </div>
+                                <div id="food" style="width: 50%; height: 100%; display: flex;">
+                                    <img src="./Images/food_.png"
+                                        style="color: #fe501b; width: 30px;height: 30px; margin-top: 2px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #fc7b24;margin-top: 6px; margin-left: 5px;">
+                                        Food & Bavrages
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="left" style="width: 100%;height: 100%;">
+                        <div id="left_main"
+                            style="width: 65%; height: 60%; display: flex;justify-content: space-between;">
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px; border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    9:00 AM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    12:15 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    3:30 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    7:00 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    10:30 PM
+                                </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby
+                                </p>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fcb933; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 1%;">
+                                Cancellation Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="showlist2"
+                    style="width: 100%;height: 7.3%;padding: 13px 20px; display: flex;justify-content: space-between; border-bottom: 1px solid rgb(239,241,243);">
+                    <div id="right" style="width: 30%; height: 100%; display: flex;justify-content: space-between;">
+                        <div id="like" style="width: 15px;height: 63px; margin-top: 5px;">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #c7c7c7;"></i>
+                        </div>
+                        <div id="right_main" style="width: 100%; height: 100%; margin-left: 15px;">
+                            <div id="name" style="width: 100%; height: 40%;  display: flex;">
+                                <div id="name_" style="width: 60%;height: 100%;  margin-left: 5px ;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 700; color: #4e4e4e;text-align: left;margin-top: 2px;">
+                                        Bahar Cinema:Vile Parle (E)</p>
+
+                                </div>
+                                <div id="info" style="width: 20%; height: 100%; display: flex;">
+                                    <img src="./Images/info.png" style="width: 20px; height: 20px;margin-top: 4px;">
+                                    <p
+                                        style="font-size: 9px;font-family:Roboto;  font-weight: 400; color: #4e4e4e;margin-top: 5px;margin-left: 1px;">
+                                        INFO</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;width: 80%;height: 60%;">
+                                <div id="mtickect" style="width: 50%; height: 100%; display: flex;">
+
+                                    <img src="./Images/phone_.png"
+                                        style="color: #4abd5d;width: 30px;height:30px;margin-top: 2px;margin-left: 0px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;margin-top: 12px;">
+                                        M-Ticket
+                                    </p>
+
+
+                                </div>
+                                <div id="food" style="width: 50%; height: 100%; display: flex;">
+                                    <img src="./Images/food_.png"
+                                        style="color: #fe501b; width: 30px;height: 30px; margin-top: 2px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #fc7b24;margin-top: 6px; margin-left: 5px;">
+                                        Food & Bavrages</p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="left" style="width: 100%;height: 100%;">
+                        <div id="left_main"
+                            style="width: 40%; height: 60%; display: flex;justify-content: space-between;">
+
+
+                            <div
+                                style="width: 20%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto; font-weight: 400; color: #4abd5d;text-align: center;margin-top: 10%;">
+                                    3:30 PM </p>
+
+                            </div>
+                            <div
+                                style="width: 20%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;margin-top: 10%;">
+                                    7:00 PM </p>
+
+                            </div>
+                            <div
+                                style="width: 20%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;margin-top: 10%;">
+                                    10:30 PM
+                                </p>
+
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fcb933; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 1%;">
+                                Cancellation Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="showlist3"
+                    style="width: 100%;height: 12.3%;padding: 13px 20px; display: flex;justify-content: space-between; border-bottom: 1px solid rgb(239,241,243);">
+                    <div id="right" style="width: 30%; height: 100%; display: flex;justify-content: space-between;">
+                        <div id="like" style="width: 15px;height: 63px; margin-top: 5px;">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #c7c7c7;"></i>
+                        </div>
+                        <div id="right_main" style="width: 100%; height: 100%; margin-left: 15px;">
+                            <div id="name" style="width: 100%; height: 40%;  display: flex;">
+                                <div id="name_" style="width: 60%;height: 100%;  margin-left: 5px ;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 700; color: #4e4e4e;text-align: left;margin-top: 2px;">
+                                        Cinepolis: Fun Republic Mall, Andheri (W)</p>
+
+                                </div>
+                                <div id="info" style="width: 20%; height: 100%; display: flex;">
+                                    <img src="./Images/info.png" style="width: 20px; height: 20px;margin-top: 4px;">
+                                    <p
+                                        style="font-size: 9px;font-family:Roboto;  font-weight: 400; color: #4e4e4e;margin-top: 5px;margin-left: 1px;">
+                                        INFO</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;width: 80%;height: 60%;  margin-top: 5px;">
+                                <div id="mtickect" style="width: 50%; height: 100%; display: flex;">
+
+                                    <img src="./Images/phone_.png"
+                                        style="color: #4abd5d;width: 30px;height:30px;margin-top: 2px;margin-left: 0px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;margin-top: 12px;">
+                                        M-Ticket
+                                    </p>
+
+
+                                </div>
+                                <div id="food" style="width: 50%; height: 50%; display: flex;;">
+                                    <img src="./Images/food_.png"
+                                        style="color: #fe501b; width: 30px;height: 30px; margin-top: 2px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #fc7b24;margin-top: 6px; margin-left: 5px;">
+                                        Food & Bavrages
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="left" style="width: 100%;height: 100%;">
+                        <div id="left_main" style="width: 95%; height: 60%; ">
+                            <div id="line_a"
+                                style=" width: 100%; display: flex;justify-content: space-between;margin-bottom: 15px;">
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px; border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color:#ff6600;text-align: center;">
+                                        7:00 AM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby 7.1</p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        8:00 AMM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS</p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        9:00 AM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS</p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        10:15 AM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        Dolby &.1 </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        11:15 AM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        12:15 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        2:00 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        Dolby 7.1
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div id="line_b" style=" width: 100%; display: flex;justify-content: space-between;">
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        2:55 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        3:55 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        6:35 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        7:35 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        9:30 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby 7.1
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        10:15 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        11:15 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div style="display: flex; margin-top: 35px;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fcb933; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 1%;">
+                                Cancellation Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="showlist1"
+                    style="width: 100%;height: 7.3%;padding: 13px 20px; display: flex;justify-content: space-between; border-bottom: 1px solid rgb(239,241,243);">
+                    <div id="right" style="width: 30%; height: 100%; display: flex;justify-content: space-between;">
+                        <div id="like" style="width: 15px;height: 63px; margin-top: 5px;">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #c7c7c7;"></i>
+                        </div>
+                        <div id="right_main" style="width: 100%; height: 100%; margin-left: 15px;">
+                            <div id="name" style="width: 100%; height: 40%;  display: flex;">
+                                <div id="name_" style="width: 60%;height: 100%;  margin-left: 5px ;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 700; color: #4e4e4e;text-align: left;margin-top: 2px;">
+                                        Ajanta Cinema Cinex:Borivali (W) Newly Renovated</p>
+
+                                </div>
+                                <div id="info" style="width: 20%; height: 100%; display: flex;">
+                                    <img src="./Images/info.png" style="width: 20px; height: 20px;margin-top: 4px;">
+                                    <p
+                                        style="font-size: 9px;font-family:Roboto;  font-weight: 400; color: #4e4e4e;margin-top: 5px;margin-left: 1px;">
+                                        INFO</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;width: 80%;height: 60%;  margin-top: 5px;">
+                                <div id="mtickect" style="width: 50%; height: 100%; display: flex;">
+
+                                    <img src="./Images/phone_.png"
+                                        style="color: #4abd5d;width: 30px;height:30px;margin-top: 2px;margin-left: 0px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;margin-top: 12px;">
+                                        M-Ticket
+                                    </p>
+
+
+                                </div>
+                                <div id="food" style="width: 50%; height: 100%; display: flex;">
+                                    <img src="./Images/food_.png"
+                                        style="color: #fe501b; width: 30px;height: 30px; margin-top: 2px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #fc7b24;margin-top: 6px; margin-left: 5px;">
+                                        Food & Bavrages
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="left" style="width: 100%;height: 100%;">
+                        <div id="left_main"
+                            style="width: 65%; height: 60%; display: flex;justify-content: space-between;">
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px; border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    9:00 AM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    12:15 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    3:30 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    7:00 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    10:30 PM
+                                </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby
+                                </p>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fcb933; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 1%;">
+                                Cancellation Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="showlist2"
+                    style="width: 100%;height: 7.3%;padding: 13px 20px; display: flex;justify-content: space-between; border-bottom: 1px solid rgb(239,241,243);">
+                    <div id="right" style="width: 30%; height: 100%; display: flex;justify-content: space-between;">
+                        <div id="like" style="width: 15px;height: 63px; margin-top: 5px;">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #c7c7c7;"></i>
+                        </div>
+                        <div id="right_main" style="width: 100%; height: 100%; margin-left: 15px;">
+                            <div id="name" style="width: 100%; height: 40%;  display: flex;">
+                                <div id="name_" style="width: 60%;height: 100%;  margin-left: 5px ;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 700; color: #4e4e4e;text-align: left;margin-top: 2px;">
+                                        Bahar Cinema:Vile Parle (E)</p>
+
+                                </div>
+                                <div id="info" style="width: 20%; height: 100%; display: flex;">
+                                    <img src="./Images/info.png" style="width: 20px; height: 20px;margin-top: 4px;">
+                                    <p
+                                        style="font-size: 9px;font-family:Roboto;  font-weight: 400; color: #4e4e4e;margin-top: 5px;margin-left: 1px;">
+                                        INFO</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;width: 80%;height: 60%;">
+                                <div id="mtickect" style="width: 50%; height: 100%; display: flex;">
+
+                                    <img src="./Images/phone_.png"
+                                        style="color: #4abd5d;width: 30px;height:30px;margin-top: 2px;margin-left: 0px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;margin-top: 12px;">
+                                        M-Ticket
+                                    </p>
+
+
+                                </div>
+                                <div id="food" style="width: 50%; height: 100%; display: flex;">
+                                    <img src="./Images/food_.png"
+                                        style="color: #fe501b; width: 30px;height: 30px; margin-top: 2px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #fc7b24;margin-top: 6px; margin-left: 5px;">
+                                        Food & Bavrages</p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="left" style="width: 100%;height: 100%;">
+                        <div id="left_main"
+                            style="width: 40%; height: 60%; display: flex;justify-content: space-between;">
+
+
+                            <div
+                                style="width: 20%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto; font-weight: 400; color: #4abd5d;text-align: center;margin-top: 10%;">
+                                    3:30 PM </p>
+
+                            </div>
+                            <div
+                                style="width: 20%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;margin-top: 10%;">
+                                    7:00 PM </p>
+
+                            </div>
+                            <div
+                                style="width: 20%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;margin-top: 10%;">
+                                    10:30 PM
+                                </p>
+
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fcb933; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 1%;">
+                                Cancellation Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="showlist3"
+                    style="width: 100%;height: 12.3%;padding: 13px 20px; display: flex;justify-content: space-between; border-bottom: 1px solid rgb(239,241,243);">
+                    <div id="right" style="width: 30%; height: 100%; display: flex;justify-content: space-between;">
+                        <div id="like" style="width: 15px;height: 63px; margin-top: 5px;">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #c7c7c7;"></i>
+                        </div>
+                        <div id="right_main" style="width: 100%; height: 100%; margin-left: 15px;">
+                            <div id="name" style="width: 100%; height: 40%;  display: flex;">
+                                <div id="name_" style="width: 60%;height: 100%;  margin-left: 5px ;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 700; color: #4e4e4e;text-align: left;margin-top: 2px;">
+                                        Cinepolis: Fun Republic Mall, Andheri (W)</p>
+
+                                </div>
+                                <div id="info" style="width: 20%; height: 100%; display: flex;">
+                                    <img src="./Images/info.png" style="width: 20px; height: 20px;margin-top: 4px;">
+                                    <p
+                                        style="font-size: 9px;font-family:Roboto;  font-weight: 400; color: #4e4e4e;margin-top: 5px;margin-left: 1px;">
+                                        INFO</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;width: 80%;height: 60%;  margin-top: 5px;">
+                                <div id="mtickect" style="width: 50%; height: 100%; display: flex;">
+
+                                    <img src="./Images/phone_.png"
+                                        style="color: #4abd5d;width: 30px;height:30px;margin-top: 2px;margin-left: 0px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;margin-top: 12px;">
+                                        M-Ticket
+                                    </p>
+
+
+                                </div>
+                                <div id="food" style="width: 50%; height: 50%; display: flex;">
+                                    <img src="./Images/food_.png"
+                                        style="color: #fe501b; width: 30px;height: 30px; margin-top: 2px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #fc7b24;margin-top: 6px; margin-left: 5px;">
+                                        Food & Bavrages
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="left" style="width: 100%;height: 100%;">
+                        <div id="left_main" style="width: 95%; height: 60%; ">
+                            <div id="line_a"
+                                style=" width: 100%; display: flex;justify-content: space-between;margin-bottom: 15px;">
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px; border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color:#ff6600;text-align: center;">
+                                        7:00 AM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby 7.1</p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        8:00 AMM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS</p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        9:00 AM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS</p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        10:15 AM </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        Dolby &.1 </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        11:15 AM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        12:15 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        2:00 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                        Dolby 7.1
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div id="line_b" style=" width: 100%; display: flex;justify-content: space-between;">
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        2:55 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        3:55 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        6:35 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        7:35 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        9:30 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby 7.1
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        10:15 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 11%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        11:15 PM
+                                    </p>
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #ff6600;text-align: center;">
+                                        Dolby ATMOS
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div style="display: flex; margin-top: 35px;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fcb933; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 1%;">
+                                Cancellation Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="showlist1"
+                    style="width: 100%;height: 7.3%;padding: 13px 20px; display: flex;justify-content: space-between; border-bottom: 1px solid rgb(239,241,243);">
+                    <div id="right" style="width: 30%; height: 100%; display: flex;justify-content: space-between;">
+                        <div id="like" style="width: 15px;height: 63px; margin-top: 5px;">
+                            <i class="fa-regular fa-heart fa-lg" style="color: #c7c7c7;"></i>
+                        </div>
+                        <div id="right_main" style="width: 100%; height: 100%; margin-left: 15px;">
+                            <div id="name" style="width: 100%; height: 40%;  display: flex;">
+                                <div id="name_" style="width: 60%;height: 100%;  margin-left: 5px ;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 700; color: #4e4e4e;text-align: left;margin-top: 2px;">
+                                        Ajanta Cinema Cinex:Borivali (W) Newly Renovated</p>
+
+                                </div>
+                                <div id="info" style="width: 20%; height: 100%; display: flex;">
+                                    <img src="./Images/info.png" style="width: 20px; height: 20px;margin-top: 4px;">
+                                    <p
+                                        style="font-size: 9px;font-family:Roboto;  font-weight: 400; color: #4e4e4e;margin-top: 5px;margin-left: 1px;">
+                                        INFO</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;width: 80%;height: 60%;  margin-top: 5px;">
+                                <div id="mtickect" style="width: 50%; height: 100%; display: flex;">
+
+                                    <img src="./Images/phone_.png"
+                                        style="color: #4abd5d;width: 30px;height:30px;margin-top: 2px;margin-left: 0px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;margin-top: 12px;">
+                                        M-Ticket
+                                    </p>
+
+
+                                </div>
+                                <div id="food" style="width: 50%; height: 100%; display: flex;">
+                                    <img src="./Images/food_.png"
+                                        style="color: #fe501b; width: 30px;height: 30px; margin-top: 2px;">
+                                    <p
+                                        style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #fc7b24;margin-top: 6px; margin-left: 5px;">
+                                        Food & Bavrages
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="left" style="width: 100%;height: 100%;">
+                        <div id="left_main"
+                            style="width: 65%; height: 60%; display: flex;justify-content: space-between;">
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px; border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    9:00 AM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    12:15 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    3:30 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    7:00 PM </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby</p>
+                            </div>
+                            <div
+                                style="width: 15%; border: 1px solid rgb(153, 153, 153);height: 30px; padding: 4px;border-radius: 4px;">
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    10:30 PM
+                                </p>
+                                <p
+                                    style="font-size: 12px;font-family:Roboto;  font-weight: 400; color: #4abd5d;text-align: center;">
+                                    Dolby
+                                </p>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <i class="fa-solid fa-circle fa-xs"
+                                style="color: #fcb933; width:1%; margin-top: 10px;height: 1%;"></i>
+                            <p
+                                style="white-space: nowrap;font-size: 11px;font-family:Roboto;  font-weight: 400; color: #4e4e4e; margin-top: 3px;padding-left: 1%;">
+                                Cancellation Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
